@@ -1,0 +1,818 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- <meta http-equiv="refresh" content="180">  -->
+<title>Amtek Auto Ltd. Stock Price, Charts, Details and Latest Announcements : Rediff.com</title>
+<meta name="keywords" content="Amtek Auto Ltd. , Amtek Auto Ltd. chart , Amtek Auto Ltd. financial results , Amtek Auto Ltd. PE ratio , Amtek Auto Ltd. EPS
+Amtek Auto Ltd. Sales , Amtek Auto Ltd. Face Value , Amtek Auto Ltd. Net profit margin , Amtek Auto Ltd. bonus , Amtek Auto Ltd. dividend , Amtek Auto Ltd. Return on average  , quity , mf invested in Amtek Auto Ltd. , compare Amtek Auto Ltd. , Amtek Auto Ltd. - stock prices, Amtek Auto Ltd. - news , Amtek Auto Ltd. - announcements , Amtek Auto Ltd. - financial report , Amtek Auto Ltd. - annual report , Amtek Auto Ltd. - balance sheet , Amtek Auto Ltd. - results , Amtek Auto Ltd. - stocks , Amtek Auto Ltd. - stock quotes , short code BSE  , short code NSE , Amtek Auto Ltd. - Stock analysis" />
+<meta name="Description" content="Get Amtek Auto Ltd. live share price, historical charts, volume, market capitalisation, market performance, reports and other company details. " />
+<link rel="stylesheet" href="http://imworld.rediff.com/moneyrediff/style_2/moneywiz_37.css" type="text/css" />
+<link rel="stylesheet" href="http://imworld.rediff.com/moneyrediff/style_2/jquery.jqplot.css" type="text/css" />
+
+<script type="text/javascript">
+var cdn_domain = "http://money.rediff.com";
+var org_domain = "http://money.rediff.com";
+var portfolio_domain = "http://portfolio.rediff.com";
+var imgpath = "http://imworld.rediff.com/moneyrediff/pix";
+var budgetYear = "2015";
+var myRediffUrl = 'http://mypage.rediff.com/';
+var pageRediffUrl = 'http://pages.rediff.com/';
+var zarabolRediffUrl = 'http://zarabol.rediff.com';
+var portfolioRediffUrl = 'http://portfolio.rediff.com';
+var rootRediffUrl = 'http://www.rediff.com';
+var ajaxCall = "off";
+var widgetGraphStartTime = "09";
+</script>
+<link rel="shortcut icon" type="image/x-icon" href="http://www.rediff.com/favicon.ico" />
+<style type="text/css">.compdetail_col1{margin-right:0;}.compdetail_col3{margin-right:30px;}.bottom_ad_container{position:fixed;width: 100%;bottom:0;left:0;right:0;text-align:center;}.div_ad_bottom{margin:0 auto;width:940px;background:#d5d5d5;}@media only screen and (device-width: 768px)
+{.bottom_ad_container{position:relative;width:100%;bottom:0;left:0;text-align:center;}}</style>
+<script type="text/javascript">
+var glb_currentpage = "company";
+function timenow()            
+{            
+var t = (((new Date).getTime())*1000)+Math.round(Math.random()*1000);var querystring = "";var tmp_ref = encodeURIComponent(document.referrer);var tmp_url = document.location.href;var curr_url = tmp_url.split("?");if(curr_url[1]){querystring = curr_url[1];} if((tmp_ref == null) || (tmp_ref.length == 0)){tmp_ref = "";}if(tmp_ref != ""){t += "&ref="+tmp_ref;}if(querystring != "" ){t += "&"+querystring;}    
+
+var url11 = "http://metric.money.rediff.com/frames/company.htm?companyCode=10660001&"+'done='+t;               
+
+if(document.getElementById("logwatch")){document.getElementById("logwatch").src = url11;}
+}
+function pass_logurl(param){if(typeof(param) != "undefined"){var t = (((new Date).getTime())*1000)+Math.round(Math.random()*1000);var querystring = "";querystring = "&src="+param; t += querystring;var log_url = "http://metric.money.rediff.com/frames/dummy.htm?done="+t;if(document.getElementById("logwatch")){document.getElementById("logwatch").src = log_url;}}}
+</script>
+
+<script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/jquery.min.js"></script>
+<script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/moneyCommon_22.min.js"></script>
+<script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/json2.min.js"></script>
+<script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/ajax1_1.min.js"></script>
+<script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/comp_stat_minimal_17.min.js"></script>
+<script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/jquery.sparkline_1.min.js"></script>
+<script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/validation_2.min.js"></script>
+<script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/ajax-list-tips.min.js"></script>
+
+<!--[if lt IE 9]>
+<script language="javascript" type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/excanvas.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/rMoneyWizGraph_2.min.js"></script>
+
+<script type="text/javascript">
+
+var companyCode = '10660001';
+var nseCompanyCode = 'AMTEKAUTO';
+
+nseCompanyCode = nseCompanyCode.replace('&amp;', '_');	/*replace & with - for nse symb & nse chart*/
+
+$(document).ready(function(){
+	setGDataAndCallDrawGraph('day', companyCode, nseCompanyCode);
+});
+</script>
+
+
+</head>
+<body>
+<iframe src="about:blank" id="logwatch" name="logwatch" width="1" height="1" FRAMEBORDER="0" MARGINWIDTH="0" MARGINHEIGHT="0"  class="hide"></iframe>
+<script type="text/javascript">timenow();</script>
+<div id="trans_div"></div>
+<div id="sharediv3"><div id="div_shareframe"></div></div>
+<div id="MainDv" class="MainDv hide"></div>
+<iframe id="Ifrm" class="Ifrm hide"></iframe>
+<!-- wrapper starts -->
+<div id="wrapper" class="wrapper">
+<div id="div_transitionAD" class="transition_ad"></div>
+<div class="toplogobar">
+	<a href="http://www.rediff.com/">rediff.com</a><span class="clear"></span>
+	<div class="floatL"><a href="http://money.rediff.com"><span class="block msprite moneywizlogo negative curhand">Rediff Moneywiz</span></a></div>
+	<ul class="ul_top_tabs">
+		<li><a href="http://money.rediff.com" class="blue" onclick="return topbar_logurl(this);" >Home</a></li>
+		<li><a href="http://portfolio.rediff.com/portfolio" onclick="return topbar_logurl(this);">My Portfolio</a></li>
+		<li><a href="http://portfolio.rediff.com/watchlist" onclick="return topbar_logurl(this);">My Watchlist</a></li>
+		<li><a href="http://money.rediff.com/indicators" class="blue" onclick="return topbar_logurl(this);">Trends</a></li>
+		<li><a href="http://zarabol.rediff.com/#!money/6801134" target="_new" onclick="enc_new(this,'http://track.rediff.com/click?url=___http://zarabol.rediff.com/%23!money/6801134___&lnk=zarabol_home-top_nav&newservice=moneyrt');">Market Voices</a></li>
+		<li><a href="http://money.rediff.com/news" class="blue" onclick="return topbar_logurl(this);">Market News</a></li>
+		<li id="moretablink" title="Show more" onclick="showMore_Less('moretablink');" class="blue curhand"><span>More </span><span class="f10">&#9660;</span></li>
+	</ul>
+        <div class="toprightlinks" id="div_topright"><span id="username">Hi Guest</span><br /><a href="http://money.rediff.com/feedback" onclick="return topbar_logurl(this);">Feedback</a><span id="signin_info"></span></div>
+	<span class="clear"></span>
+</div>
+<div class="greyline"></div>
+<div id="moremoney" class="hide bggrey1">
+	<div title="Close" onclick="showMore_Less('moretablink');" class="floatR curhand"><b>X</b>&nbsp; &nbsp;</div>
+	<ul class="ul_top_tabs floatL">
+		<li><a href="http://money.rediff.com/tools/what-if" onclick="return topbar_logurl(this);">Investment Tool</a></li>
+		<li><a href="http://money.rediff.com/tools/forex" onclick="return topbar_logurl(this);">Forex</a></li>
+		<li><a href="http://money.rediff.com/indices" onclick="return topbar_logurl(this);">Indices</a></li>
+		<li><a href="http://money.rediff.com/sectors" onclick="return topbar_logurl(this);">Sectors</a></li>
+		<li><a href="http://money.rediff.com/mutual-funds" onclick="return topbar_logurl(this);">Mutual Funds</a></li>
+		<li><a href="http://money.rediff.com/gainers" onclick="return topbar_logurl(this);">Gainers / Losers</a></li>
+		<li><a href="http://money.rediff.com/directory" onclick="return topbar_logurl(this);">All Pages</a></li>
+	</ul>
+	<div id="world_right10" class="world_right10"></div>
+  	<span class="clear"></span><span class="ht10"></span>
+</div>
+
+
+<script type="text/javascript">
+var endyear = "";
+var mypage_domain = "http://mypage.rediff.com";
+var imgpath	= "http://imworld.rediff.com/moneyrediff/pix";
+
+
+function  topbar_logurl(obj)
+{
+	if(typeof(glb_currentpage) != "undefined" )
+	{
+		var c_href = obj.href ;
+		if(glb_currentpage == "home")
+		{
+			if(c_href.indexOf('feedback') >= 0 )
+			{
+				document.location.href = c_href + "?src=top_nav&Rand=" + Math.random();
+			}
+			else
+			{
+				document.location.href = c_href + "?src=top_nav";
+			}
+			return false;
+		}
+		else if(glb_currentpage == "company")
+		{
+			if(c_href.indexOf('feedback') >= 0 )
+			{
+				document.location.href = c_href + "?src=comp_top_nav&Rand=" + Math.random();
+			}
+			else
+			{
+				document.location.href = c_href + "?src=comp_top_nav";
+			}
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+	else
+	{
+		return true;
+	}
+}
+document.body.onClick = 'Suggestionr.destroysug';
+
+</script><center><div id="div_ad_LB02" class="ad_lb02"></div></center>
+<script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/ws-global_12.min.js"></script>
+<style type="text/css">.div_shcat{background:#e3e3e5;width:940px;height:36px;margin:5px auto 0 auto;overflow:hidden;}.div_shcat_inner{display:inline-block;height:25px;*float:left;}.shcatlink{color:#000;padding:0 6px;border-right:solid 1px #000;font-size:12px;}.shcatlinklast{color:#000;font-size:12px;padding:0 0 0 6px;}.shfor{font-size:14px;display:block;float:left;}.sh_toplefttri{width:0;height:0;border-top:18px solid #e3e3e5;border-left:18px solid #fff;*border:18px solid #e3e3e5;}.sh_botlefttri{width:0;height:0;border-top:18px solid #fff;border-right:18px solid #e3e3e5;*border:18px solid #e3e3e5;}.sh_toprighttri{width:0 height:0;border-bottom:18px solid #fff;border-left:18px solid #e3e3e5;*border:18px solid #e3e3e5;}.sh_botrighttri{width: 0; height: 0; border-bottom:18px solid #e3e3e5;border-right:18px solid #fff;*border:18px solid #e3e3e5;}.sh_leftborder{float:left;}.sh_rightborder{float:right;}.sh_cat_mid{float:left;margin:10px 0 0 5px;}.div_shop_subcategory{display:none;background:#fff;border:solid 1px #666;text-align:left;position:absolute;top:0;z-index:100}.div_hm_subcatrgoryL{padding:20px;float:left;display:inline;color:#686868;margin:0 25px 0 0}.div_hm_subcatrgoryR{padding:20px 0;float:left;display:inline;color:#686868;width:150px}</style>
+<div class="div_shcat">
+    <div class="sh_leftborder"><div class="sh_toplefttri"></div><div class="sh_botlefttri"></div></div>
+    <div class="sh_cat_mid">
+    <b class="shfor">SHOP FOR:</b>
+    <div id="div_shcat" class="div_shcat_inner"><span id="top_sh_cat"><a href="http://shopping.rediff.com/categories/men-s-wear/cat-2/?sc_cid=money_cat|fixcat_mens_lifestyle" id="topcat1" class="shcatlink">Men's Lifestyle</a><a href="http://shopping.rediff.com/categories/women-s-apparel/cat-57?sc_cid=money_cat|fixcat_womensclothing" id="topcat2" class="shcatlink">Women's Lifestyle</a><a href="http://shopping.rediff.com/categories/mobile-phones---accessories/cat-8248?sc_cid=money_cat|fixcat_mobile" id="topcat3" class="shcatlink">Mobiles</a><a href="http://shopping.rediff.com/categories/electronics/cat-453?sc_cid=money_cat|fixcat_electronics" id="topcat4" class="shcatlink">Electronics</a><a href="http://shopping.rediff.com/categories/watches/cat-9628?sc_cid=money_cat|fixcat_watches" id="topcat5" class="shcatlink">Watches</a><a href="http://shopping.rediff.com/categories/automobile-accessories/cat-430?sc_cid=money_cat|fixcat_automobiles" id="topcat6" class="shcatlink">Car Accessories</a><a href="http://shopping.rediff.com/categories/home-decor---furnishings/cat-615?sc_cid=money_cat|fixcat_home" id="topcat7" class="shcatlink">Home & Decor</a><a href="http://shopping.rediff.com/categories/personal-care---beauty/cat-8551?sc_cid=money_cat|fixcat_personalcare" id="topcat8" class="shcatlink">Personal Care</a></span></div>
+    <a href="http://books.rediff.com?sc_cid=money_cat" class="shcatlink" id="topcatbooklink">Books</a><a href="http://shopping.rediff.com/categories?sc_cid=money_cat_all" class="shcatlinklast" id="topallcatlink">All</a>
+    </div>
+    <div class="sh_rightborder"><div class="sh_toprighttri"></div><div class="sh_botrighttri"></div></div>
+</div>
+
+<div class="srchbar" style="*width:620px;">
+<form onsubmit="return submitSearch()" action="" method="GET" id="queryTop" name="srchform">
+<div>
+	<div class="f14 floatL"><span class="bold">REAL-TIME QUOTE </span><br /><span class="grey f14">Enter Company or MF</span></div>
+	<div class="floatL"><div><input type="text" value="Amtek Auto Ltd." class="txt_srch" name="srchword" id="srchword" autocomplete="off" /></div><div class="eg">e.g. Tata motors, Reliance MF, 500570</div>
+	<input type="hidden" value='' id="hidden_url"/></div>
+	<div class="floatL"><div><input type="submit" class="msprite btn_srch" value="  " /></div></div>
+	<input type="hidden" value="web" id="snsSRC" name="snssrc" />
+	<span class="clear"></span>
+</div>
+</form>
+<div id="sug" class="sug hide"><div id="sugbox"></div></div>
+</div>
+<div id="div_ad_TopRight" class="ad_topshop"></div>
+<span class="clear"></span>
+
+<script type="text/javascript">Suggestionr.initr('sugbox','sug','srchword',true);</script>
+<script type="text/javascript">jQuery('document').ready( function(){$('#srchword').focus( function(){$(this).val('');} );} );</script>
+
+<script>
+	var _comscore = _comscore || [];
+	_comscore.push({ c1: "2", c2: "6035613" });
+	(function(){
+	var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+	s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+	el.parentNode.insertBefore(s, el);
+	})();
+</script>
+
+<noscript><img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6035613&amp;cv=2.0&amp;cj=1"></noscript>
+<!-- leftcontainer starts -->
+<div id="leftcontainer" class="leftcontainer">
+<form name="marketfrm"><input type="hidden" id="currenthrs" name="currenthrs" value="15" /><input type="hidden" id="marketstat" name="marketstat" value="1" /><input type="hidden" id="marketstart" name="marketstart" value="09" /><input type="hidden" id="marketend" name="marketend" value="16" /><input type="hidden" id="companyhit" name="companyhit" value="15" /></form>
+<span id="LastTradedDate" class="hide" ></span><span id="LastTradedTime" class="hide"></span>
+<span id="LastTradedDate_nse" class="hide" ></span><span id="LastTradedTime_nse" class="hide"></span>
+<div id="for_BSE">
+	<div class="msprite refreshlink" onclick="location.reload();">Refresh</div>
+         
+	<p class="grey2 f12">520077&nbsp;AMTEKAUTO&nbsp;Group (A)</p>
+        	<span class="clear"></span>
+	<h1 class="f14 bold floatL">Amtek Auto Ltd.<span class="grey"> LIVE</span> on BSE 
+	 (<span class="blue curhand" onclick="showDiv('for_NSE');hideDiv('for_BSE');setCookieAtMoney('HomeIndex', 'NSE', 0);setGDataAndCallDrawGraph('day', companyCode, nseCompanyCode);pass_logurl('comp_graph');current_status('AMTEKAUTO');">View NSE</span>)&nbsp; &nbsp;</h1><div class="div_addto"><div class="msprite btn_wts_left"></div><div class="btn_wts_mid" onclick="showDivPopupNew('10660001','sw');document.getElementById('maxprice').focus();pass_logurl('comp_hot');">Add to watchlist</div><div class="msprite btn_wts_right"></div>&nbsp;<input type="button" value="Add to portfolio"  onclick="showDivPopupNew('10660001','portfolio');pass_logurl('comp_hot');" class="btn_addtoportfolio" /></div>
+	<span class="clear"></span><span class="ht20"></span>
+	<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr valign="top">
+	<td width="40%">
+		<div class="cmp_col1">
+			<div class="content" id="div_bse_graph">
+				<div onclick="pass_logurl('comp_graph');" id="bseChart" style="width:240px;height:133px;"></div>
+			</div>
+			
+			<span class="ht10"></span>
+			
+			<div class="zoom-container">
+				<div class="floatL">
+					<a href="http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/bse/day/chart"><img src="http://imworld.rediff.com/moneyrediff/pix/blank.gif" alt="" class="msprite zoomicon vmiddle" style="display:block;float:left;" />Zoom</a>
+				</div>
+			</div>
+		</div>
+	</td>
+	<td width="38%">
+		
+		<!-- Edited by Balu T on Nov 30, 2012 ::: For implementing the new company graph -->
+		<div style="margin-left:5px;">
+			<div class="f16">
+				<span id="ltpid" class="bold">42.25</span> &nbsp; 
+				<span id="change">0.80</span> &nbsp; 
+				 
+				<span id="ChangePercent">1.93%</span>
+			</div>
+			
+			<table class="company-graph-wrap" cellpadding="4" cellspacing="0">
+				<tr>
+					<td>Volume</td>
+					<td><span id="Volume">1,582,014</span></td>
+				</tr>
+				<tr>
+					<td>Prev close</td>
+					<td><span id="PrevClose">41.45</span></td>
+				</tr>
+				<tr>
+					<td>Day's H/L (Rs.)</td>
+					<td><span id="highlow" class="f12">44.00 - 38.75</span></td>
+				</tr>
+				<tr>
+					<td>52wk H/L (Rs.)</td>
+					<td><span id="FiftyTwoHighlow" class="f12">231.25 - 25.60</span></td>
+				</tr>
+				<tr>
+					<td>Mkt Cap (Rs. Cr)</td>
+					<td><span id="MarketCap" class="f12">949.78</span></td>
+				</tr>			
+			</table>
+		</div>
+	</td>
+	<td width="22%">
+				<div class="cmp_col5"><div class="cmp_meterbox">HOW HOT IS THIS STOCK?<br /><img src="http://im.rediff.com/money/images/-60.jpg" width="125" vspace="8" /><span class="clear"></span><p class="computed_on">Last 15 days data &#169; Rediff.com</p></div></div>
+			</td>
+	</tr>
+	</table>
+</div>
+
+<div id="for_NSE" class="hide">
+	<div class="msprite refreshlink" onclick="location.reload();">Refresh</div>
+         
+	<p class="grey2 f12">AMTEKAUTO</p>
+        	<span class="clear"></span>
+	<h1 class="f14 bold floatL">Amtek Auto Ltd.<span class="grey"> LIVE</span> on NSE (<span class="blue curhand" onclick="showDiv('for_BSE');hideDiv('for_NSE');setCookieAtMoney('HomeIndex', 'BSE', 0);pass_logurl('comp_graph');setGDataAndCallDrawGraph('day', companyCode, nseCompanyCode);current_status('10660001');">View BSE</span>)&nbsp; &nbsp;</h1><div class="div_addto"><div class="msprite btn_wts_left"></div><div class="btn_wts_mid" onclick="showDivPopupNew('10660001','sw');document.getElementById('maxprice').focus();">Add to watchlist</div><div class="msprite btn_wts_right"></div>&nbsp;<input type="button" value="Add to portfolio"  onclick="showDivPopupNew('10660001','portfolio');" class="btn_addtoportfolio" /></div>
+	<span class="clear"></span><span class="ht20"></span>
+	
+	<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr valign="top">
+	<td width="40%">
+		<div class="cmp_col1">
+			<div class="content" id="div_nse_graph">
+				<div onclick="pass_logurl('comp_graph');" id="nseChart" style="width:240px;height:133px;"></div>
+			</div>
+			<span class="ht10"></span>
+			
+			
+			<div class="zoom-container">
+				<div class="floatL">
+					<a href="http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/nse/day/chart"><img src="http://imworld.rediff.com/moneyrediff/pix/blank.gif" alt="" class="msprite zoomicon vmiddle" style="display:block;float:left;" />Zoom</a>
+				</div>
+			</div>		
+		</div>
+	</td>
+	<td width="38%">
+		
+		<!-- Edited by Balu T on Nov 30, 2012 ::: For implementing the new company graph -->
+		<div style="margin-left:5px;">
+			<div class="f16">
+				<span id="ltpid_nse" class="bold">42.30</span> &nbsp; 
+				<span id="change_nse">0.90</span> &nbsp; 
+				 
+				<span id="ChangePercent_nse">2.17%</span>
+			</div>
+			
+			<table class="company-graph-wrap" cellpadding="4" cellspacing="0">
+				<tr>
+					<td>Volume</td>
+					<td><span id="Volume_nse">5,279,065</span></td>
+				</tr>
+				<tr>
+					<td>Prev close</td>
+					<td><span id="PrevClose_nse">41.40</span></td>
+				</tr>
+				<tr>
+					<td>Day's H/L (Rs.)</td>
+					<td><span id="highlow_nse" class="f12">44.05 - 38.60</span></td>
+				</tr>
+				<tr>
+					<td>52wk H/L (Rs.)</td>
+					<td><span id="FiftyTwoHighlow_nse" class="f12">233.00 - 25.20</span></td>
+				</tr>
+				<tr>
+					<td>Turnover (Rs. Lacs)</td>
+					<td><span id="MarketCap_nse" class="f12 grey">2,215.62</span></td>
+				</tr>			
+			</table>
+		</div>
+	</td>
+	<td width="22%">
+		<div class="cmp_col5"><div class="cmp_meterbox">HOW HOT IS THIS STOCK?<br /><img src="http://im.rediff.com/money/images/-60.jpg" width="125" vspace="8" /><span class="clear"></span><p class="computed_on">Last 15 days data &#169; Rediff.com</p></div></div>
+	</td>
+	</tr>
+	</table>
+	
+	
+</div>
+<span class="clear ht10"></span>
+
+<div>
+	<span id="BonusSplitText" style="font-weight: normal;"></span>
+</div>
+<span class="clear"></span>
+<span class="ht10"></span><div class="dotline"></div><span class="ht15"></span>
+
+<div>
+			<h2 class="f14 floatL bold">Market Voices for <b>Amtek Auto Ltd.</b>&nbsp; <span class="f12 bold">(<a href="http://zarabol.rediff.com/Amtek-Auto-Ltd/7682446" target="_blank" onclick="enc(this,'http://track.rediff.com/click?url=___http://zarabol.rediff.com/Amtek-Auto-Ltd/7682446___&lnk=comp_zarabol_seeall&newservice=moneyrt');" >See all 1,350 market voices</a>)</span>&nbsp; &nbsp;</h2><div class="floatL jtdbtn" id="jtd_link"><div class="msprite sm_btnleft1"></div><input type="button" onclick="showDiv('div_jointhediscbox');hideDiv('jtd_link');" class="sm_jointhediscbtn" value="Join the discussion"><div class="msprite sm_btnright1"></div></div>
+		<span class="clear ht5"></span>
+	<div id="div_jointhediscbox" class="hide">
+		<form name="postFeed" method="" action="">
+			<input id="suggestionCount" type="hidden" value="0" name="suggestionCount" />
+			<input id="topic_id" type="hidden" value="" name="topic_id" />
+			<input id="topic_name" type="hidden" value="" name="topic_name" />
+			<input id="messageimage" type="hidden" value="" name="messageimage" />
+			<input id="messagevideo" type="hidden" value="" name="messagevideo" />
+			<textarea  name="msg" id="msg" class="postarea1" onfocus="showDefValue(this);"  onblur="showDefValue(this);"  onkeyup="postcharCount('msg','char_limit');">Type your message here</textarea>	
+			<span class="ht5"></span>
+			<div id="char_limit" class="floatR grey">140 Characters</div>
+			<div class="floatL"><div class="msprite btnleft1"></div><input id="postbtn" type="button" value="Post" class="postbtn" onclick="joinDiscussion('Amtek-Auto-Ltd');" /><div class="msprite btnright1"></div><span id="postwaiting"></span></div>
+			<div class="cancelpost">&nbsp; <span class="blue" onclick="hideDiv('div_jointhediscbox');showDiv('jtd_link');document.postFeed.reset();" >Cancel</span></div>			<span class="clear"></span>
+		</form><span class="ht10"></span>
+	</div>
+	<div id="currentpost"></div>
+	<div id="marketVoice">
+                                                <div id="feed_outer_1447048684564035ec2daa915220" class="mk_voice_row_mf">
+                    <div id="feed_1447048684564035ec2daa915220" class="div_user_feed">
+                            <div class="people_sp_right">
+																<a href="http://mypage.rediff.com/joseph-augustin/71795554"  target="_blank">Joseph Augustin</a>
+																<span id="feedtime_1447048684564035ec2daa915220" class="grey"> - 5 hour(s) ago</span> <span id="title_1447048684564035ec2daa915220">TARGET??????? <a href='http://zarabol.rediff.com/amtek-auto-ltd/7682446' onclick='changeHref(this,"http://zarabol.rediff.com/#!amtek-auto-ltd/7682446");return false;' class='historyNav'><h6 class="f12 inline">#Amtek-Auto-Ltd</h6></a> <a href='http://zarabol.rediff.com/money/10173983' onclick='changeHref(this,"http://zarabol.rediff.com/#!money/10173983");return false;' class='historyNav'><h6 class="f12 inline"></h6></a> <a href='http://zarabol.rediff.com/market-voices/8773579' onclick='changeHref(this,"http://zarabol.rediff.com/#!market-voices/8773579");return false;' class='historyNav'><h6 class="f12 inline"></h6></a></span> 
+                                <div id="waitimg_1447048684564035ec2daa915220" class="floatL"></div>
+                                <div id="zb_1447048684564035ec2daa915220" >
+                                    <span class="ht5"></span>
+                                    <span id="reply_1447048684564035ec2daa915220" class="curhand blue" onclick="reply('1447048684564035ec2daa915220' , 'joseph Augustin' , '71795554' , '0', 'reply')">Reply</span>
+                                    <span class="grey1">&nbsp; | &nbsp;</span>
+									<a href="javascript:void (0);" onclick="showInviteFriends('http://track.rediff.com/click?url=___http://share.rediff.com/pattern/friends?inviteservice=zarabol&inviteurl=http://zarabol.rediff.com/feeds/getcomments/1447048684564035ec2daa915220&var=lightbox&msgid=zarabol&showfriends=0&grabber=1&title=TARGET%3F%3F%3F%3F%3F%3F%3F%20%23Amtek-Auto-Ltd%20%23money%20%23market-voices___&lnk=comp_zarabol_share&newservice=moneyrt');">Share</a>
+                                </div>
+                            </div>
+                            <span class="clear"></span>
+                    </div>
+                    
+                    <div class="div_user_reply" id="replyFeed_1447048684564035ec2daa915220">
+                                        </div>
+                                
+                     <div class="bgwhite"><span class="clear"></span></div>
+                    <div id="div_allreply_1447048684564035ec2daa915220"><div id="div_1447048684564035ec2daa915220"></div></div>
+            </div>
+            <div class="dotline"></div>
+                                                <div id="feed_outer_1446709728563b09e0c508125465" class="mk_voice_row_mf">
+                    <div id="feed_1446709728563b09e0c508125465" class="div_user_feed">
+                            <div class="people_sp_right">
+																<a href="http://mypage.rediff.com/kartik/84040788"  target="_blank">Kartik</a>
+																<span id="feedtime_1446709728563b09e0c508125465" class="grey"> - 4 day(s) ago</span> <span id="title_1446709728563b09e0c508125465">[SKB] [SKB] [SKB] [SKB] [SKB] Wonderful opportunity in market to know stock of the day by SEBI REGISTERED INVESTMENT ADVISER contact 097,700,211,55 or visit <a href="http://rediff.ly/2v5ks" target="_blank">http://rediff.ly/2v5ks</a> and register <a href='http://zarabol.rediff.com/amtek-auto-ltd/7682446' onclick='changeHref(this,"http://zarabol.rediff.com/#!amtek-auto-ltd/7682446");return false;' class='historyNav'><h6 class="f12 inline">#Amtek-Auto-Ltd</h6></a></span> 
+                                <div id="waitimg_1446709728563b09e0c508125465" class="floatL"></div>
+                                <div id="zb_1446709728563b09e0c508125465" >
+                                    <span class="ht5"></span>
+                                    <span id="reply_1446709728563b09e0c508125465" class="curhand blue" onclick="reply('1446709728563b09e0c508125465' , 'kartik' , '84040788' , '0', 'reply')">Reply</span>
+                                    <span class="grey1">&nbsp; | &nbsp;</span>
+									<a href="javascript:void (0);" onclick="showInviteFriends('http://track.rediff.com/click?url=___http://share.rediff.com/pattern/friends?inviteservice=zarabol&inviteurl=http://zarabol.rediff.com/feeds/getcomments/1446709728563b09e0c508125465&var=lightbox&msgid=zarabol&showfriends=0&grabber=1&title=%5BSKB%5D%20%5BSKB%5D%20%5BSKB%5D%20%5BSKB%5D%20%5BSKB%5D%20Wonderful%20opportunity%20in%20market%20to%20know%20stock%20of%20the%20day%20by%20SEBI%20REGISTERED%20INVESTMENT%20ADVISER%20contact%20097%2C700%2C211%2C55%20or%20visit%20and%20register%20%23Amtek-Auto-Ltd___&lnk=comp_zarabol_share&newservice=moneyrt');">Share</a>
+                                </div>
+                            </div>
+                            <span class="clear"></span>
+                    </div>
+                    
+                    <div class="div_user_reply" id="replyFeed_1446709728563b09e0c508125465">
+                                        </div>
+                                
+                     <div class="bgwhite"><span class="clear"></span></div>
+                    <div id="div_allreply_1446709728563b09e0c508125465"><div id="div_1446709728563b09e0c508125465"></div></div>
+            </div>
+            <div class="dotline"></div>
+                                    	</div>
+	<span class="ht15"></span>
+	</div>
+
+        <div>
+        <h2 class="f14 bold"><b>Realtime news for Amtek Auto Ltd.</b>  <span class="f12 bold">(<a href='http://realtime.rediff.com/news/Amtek-Auto-Ltd' target="_jbpinter" onclick="enc_new(this,'http://track.rediff.com/click?url=___http://realtime.rediff.com/news/Amtek-Auto-Ltd___&lnk=comp_rtnews_seeall&newservice=moneyrt');">See all 346 news</a>)</span></h2>
+		<span class="ht5"></span><span class="grey f11">09 November 2015, 17:13</span><span class="ht10"></span>
+        <div>
+                    
+			<div>
+				<a href="http://realtime.rediff.com/news/business/Debt-cut-plan-prop-for-Amtek/2c22ee6daf58ee0f"  target="_jbpinter" onclick="enc1(this,'http://track.rediff.com/click?url=___http%3A%2F%2Frealtime.rediff.com%2Fnews%2Fbusiness%2FDebt-cut-plan-prop-for-Amtek%2F2c22ee6daf58ee0f___&lnk=comp_rtnews&newservice=moneyrt');"  rel="nofollow">Debt-cut plan prop for Amtek</a> - <span class="grey">5 day(s) ago</span>
+			</div>
+            <span class="ht5"></span>
+                    
+			<div>
+				<a href="http://realtime.rediff.com/news/business/Debt-hit-Amtek-Group-is-looking-to-sell-off-coffee-chain-Barista-to-cut-costs/7b47db3fa3daf14a"  target="_jbpinter" onclick="enc1(this,'http://track.rediff.com/click?url=___http%3A%2F%2Frealtime.rediff.com%2Fnews%2Fbusiness%2FDebt-hit-Amtek-Group-is-looking-to-sell-off-coffee-chain-Barista-to-cut-costs%2F7b47db3fa3daf14a___&lnk=comp_rtnews&newservice=moneyrt');"  rel="nofollow">Debt-hit Amtek Group is looking to sell off coffee chain Barista to cut costs</a> - <span class="grey">5 day(s) ago</span>
+			</div>
+            <span class="ht5"></span>
+                    
+			<div>
+				<a href="http://realtime.rediff.com/news/business/From-Tilaknagar-Industries-to-Amtek-Auto-10-stocks-that-made-news-today/1fd9dc642f113fdd"  target="_jbpinter" onclick="enc1(this,'http://track.rediff.com/click?url=___http%3A%2F%2Frealtime.rediff.com%2Fnews%2Fbusiness%2FFrom-Tilaknagar-Industries-to-Amtek-Auto-10-stocks-that-made-news-today%2F1fd9dc642f113fdd___&lnk=comp_rtnews&newservice=moneyrt');"  rel="nofollow">From Tilaknagar Industries to Amtek Auto: 10 stocks that made news today</a> - <span class="grey">6 day(s) ago</span>
+			</div>
+            <span class="ht5"></span>
+                    
+			<div>
+				<a href="http://realtime.rediff.com/news/business/Loss-making-Barista-Coffee-likely-to-be-sold-by-Amtek-Group-Report/c869f407ac9008b6"  target="_jbpinter" onclick="enc1(this,'http://track.rediff.com/click?url=___http%3A%2F%2Frealtime.rediff.com%2Fnews%2Fbusiness%2FLoss-making-Barista-Coffee-likely-to-be-sold-by-Amtek-Group-Report%2Fc869f407ac9008b6___&lnk=comp_rtnews&newservice=moneyrt');"  rel="nofollow">Loss-making Barista Coffee likely to be sold by Amtek Group: Report</a> - <span class="grey">5 day(s) ago</span>
+			</div>
+            <span class="ht5"></span>
+                    
+			<div>
+				<a href="http://realtime.rediff.com/news/business/Amtek-Auto-gains-on-progress-in-debt-reduction-talks/202b1e8b2ffca05a"  target="_jbpinter" onclick="enc1(this,'http://track.rediff.com/click?url=___http%3A%2F%2Frealtime.rediff.com%2Fnews%2Fbusiness%2FAmtek-Auto-gains-on-progress-in-debt-reduction-talks%2F202b1e8b2ffca05a___&lnk=comp_rtnews&newservice=moneyrt');"  rel="nofollow">Amtek Auto gains on progress in debt-reduction talks</a> - <span class="grey">6 day(s) ago</span>
+			</div>
+            <span class="ht5"></span>
+        	<span class="ht15"></span>
+	<div class="dotline"></div>
+        </div>
+		<span class="ht15"></span>
+	</div>
+	
+
+
+<div>
+	<h2 class="f14 bold">Company details for <b>Amtek Auto Ltd.</b></h2><span class="ht15"></span>
+	<div class="compdetail_col2">
+		<h2 class="bold">Report Card</h2>
+		<div id="div_rcard_more">
+			<div><div class="floatL">PE Ratios</div><div class="floatR">2.82</div><span class="clear"></span></div>
+			<div><div class="floatL">EPS (Rs.)</div><div class="floatR">14.68</div><span class="clear"></span></div>
+			<div><div class="floatL">Sales (Rs. Cr)</div><div class="floatR">866.32</div><span class="clear"></span></div>
+			<div><div class="floatL">Face Value (Rs.)</div><div class="floatR">2</div><span class="clear"></span></div>
+			<div><div class="floatL">Net Profit<br />Margin (%)</div><div class="floatR">&nbsp;<br />8.08</div><span class="clear"></span></div>
+			<div><div class="floatL">Last Bonus</div><div class="floatR">1:1</div><span class="clear"></span></div>
+			<div><div class="floatL">Last Dividend(%)</div><div class="floatR">25</div><span class="clear"></span></div>
+			<div><div class="floatL">Return on<br />Average Equity</div><div class="floatR">&nbsp;<br />6.29</div><span class="clear"></span></div>
+		</div>
+	</div>
+	<div class="compdetail_col3">
+		<h2 class="bold">Research Centre</h2>
+		<div id="div_res_centre_more">Results: <a href="http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/results-quarter" onclick="trackURL('http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/results-quarter?src=comp_research');return false;">Quarterly</a> &nbsp;|&nbsp; <a href="http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/results-half" onclick="trackURL('http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/results-half?src=comp_research');return false;">Half Yearly</a> &nbsp;|&nbsp; <a href="http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/results-annual" onclick="trackURL('http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/results-annual?src=comp_research');return false;">Annual</a><br />Statements: <a href="http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/balance-sheet" onclick="trackURL('http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/balance-sheet?src=comp_research');return false;">Balance Sheet</a> &nbsp;|&nbsp; <a href="http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/profit-and-loss" onclick="trackURL('http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/profit-and-loss?src=comp_research');return false;">P&L</a> &nbsp;|&nbsp; <a href="http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/cash-flow" onclick="trackURL('http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/cash-flow?src=comp_research');return false;">Cash Flow</a>&nbsp; More: <a href="http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/dividend" onclick="trackURL('http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/dividend?src=comp_research');return false;">Dividend</a> &nbsp;|&nbsp; <a href="http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/bonus" onclick="trackURL('http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/bonus?src=comp_research');return false;">Bonus</a> &nbsp;|&nbsp; <a href="http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/share-holding" onclick="trackURL('http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/share-holding?src=comp_research');return false;">Share Holding</a> &nbsp;|&nbsp; <a href="http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/capital-structures" onclick="trackURL('http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/capital-structures?src=comp_research');return false;">Capital Structures</a> &nbsp;|&nbsp; <a href="http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/ratio" onclick="trackURL('http://money.rediff.com/companies/Amtek-Auto-Ltd/10660001/ratio?src=comp_research');return false;">Ratios</a>
+		<span class="ht5"></span>
+		</div>
+	</div>
+		<div class="compdetail_col1">
+		<h2 class="bold">Mutual Funds Invested</h2>
+				<div id="div_mf_invest_more">
+				<div><div class="mu_fund_name"><a href="/mutual-funds/Goldman-Sachs-CNX-500-Fund---Direct-Plan---Growth/14057686/2066" onclick="trackURL('/mutual-funds/Goldman-Sachs-CNX-500-Fund---Direct-Plan---Growth/14057686/2066?src=comp_mfs');return false;">Goldman Sachs CNX 500 Fund - Direct Plan - Growth</a></div><div class="floatR">0.01%</div><span class="clear"></span></div>
+				<div><div class="mu_fund_name"><a href="/mutual-funds/Goldman-Sachs-CNX-500-Fund---Growth/14055150/2066" onclick="trackURL('/mutual-funds/Goldman-Sachs-CNX-500-Fund---Growth/14055150/2066?src=comp_mfs');return false;">Goldman Sachs CNX 500 Fund - Growth</a></div><div class="floatR">0.01%</div><span class="clear"></span></div>
+				<div><div class="mu_fund_name"><a href="/mutual-funds/Goldman-Sachs-CNX-500-Fund---Direct-Plan---Dividend/14057686/2067" onclick="trackURL('/mutual-funds/Goldman-Sachs-CNX-500-Fund---Direct-Plan---Dividend/14057686/2067?src=comp_mfs');return false;">Goldman Sachs CNX 500 Fund - Direct Plan - Dividend</a></div><div class="floatR">0.01%</div><span class="clear"></span></div>
+				<div><div class="mu_fund_name"><a href="/mutual-funds/Goldman-Sachs-CNX-500-Fund---Dividend/14055150/2067" onclick="trackURL('/mutual-funds/Goldman-Sachs-CNX-500-Fund---Dividend/14055150/2067?src=comp_mfs');return false;">Goldman Sachs CNX 500 Fund - Dividend</a></div><div class="floatR">0.01%</div><span class="clear"></span></div>
+				</div>
+			</div>
+		<span class="clear"></span>
+</div>
+<span class="clear"></span><span class="ht15"></span><div class="dotline"></div><span class="ht15"></span>
+
+<div>
+	<form action="" method="post" id="frmStockChart" name="frmStockChart">
+	<div id="balloon1"></div>
+	<h2 class="f14 bold"><b>Amtek Auto Ltd.</b> performance snapshot</h2><span class="ht15"></span>
+	<div>If you had invested Rs.<input type="text" name="amtVal" id="in_money" value="1,000" onkeyup="get_result();" class="cmp_amtval_txtbox" />&nbsp; in <b>Amtek Auto Ltd.</b>, &nbsp;
+	<select id="selPer" name="iSelectedPeriod"  onchange="get_result();" id="selPer"><option value="1">1 Week</option><option value="2">1 Month</option><option value="3">6 Months</option><option value="4">1 Year</option></select> ago
+	<input type="hidden" id="companyCode" value="10660001" />
+	<span class="ht10"></span><p>You would have &nbsp;<span id="res_val" class="bold">Rs. 000.00</span>&nbsp;</p></div>
+	<span class="clear ht15"></span>
+	</form>
+	<span class="clear"></span>
+	<a href="javascript:showDivPopupNew('10660001','portfolio');"><img src="http://imworld.rediff.com/moneyrediff/pix/blank.gif" class="msprite plusbox_icon vmiddle" /> Add to portfolio</a><span class="ht15"></span>
+	<div class="dotline"></div><span class="ht15"></span>
+</div>
+
+
+<div>
+	<h2 class="f14 bold">Compare <b>Amtek Auto Ltd.</b> with other stocks</h2><span class="ht15"></span>
+	<div id="compare_less" >
+				<div class="compare_col1">Amara Raja Batteries Ltd.</div><div class="compare_col2">881.40</div><div class="compare_col3"><a href="http://money.rediff.com/compare/chart/10660001a13150010" onclick="trackURL('http://money.rediff.com/compare/chart/10660001a13150010?src=comp_compare');return false;">Compare</a></div><span class="clear"></span>
+				<div class="compare_col1">Bosch Ltd.</div><div class="compare_col2">19,936.10</div><div class="compare_col3"><a href="http://money.rediff.com/compare/chart/10660001a10610013" onclick="trackURL('http://money.rediff.com/compare/chart/10660001a10610013?src=comp_compare');return false;">Compare</a></div><span class="clear"></span>
+				<span class="ht5"></span><span class="blue curhand" onclick="hideDiv('compare_less');showDiv('compare_more');pass_logurl('comp_compare');"><img src="http://imworld.rediff.com/moneyrediff/pix/blank.gif" class="msprite plusbox_icon vmiddle" /> Show more companies</span>	</div>
+		<div id="compare_more" class="hide">
+				<div class="compare_col1">Amara Raja Batteries Ltd.</div><div class="compare_col2">881.40</div><div class="compare_col3"><a href="http://money.rediff.com/compare/chart/10660001a13150010" onclick="trackURL('http://money.rediff.com/compare/chart/10660001a13150010?src=comp_compare');return false;">Compare</a></div><span class="clear"></span>
+				<div class="compare_col1">Bosch Ltd.</div><div class="compare_col2">19,936.10</div><div class="compare_col3"><a href="http://money.rediff.com/compare/chart/10660001a10610013" onclick="trackURL('http://money.rediff.com/compare/chart/10660001a10610013?src=comp_compare');return false;">Compare</a></div><span class="clear"></span>
+				<div class="compare_col1">Exide Industries Ltd.</div><div class="compare_col2">144.95</div><div class="compare_col3"><a href="http://money.rediff.com/compare/chart/10660001a10550001" onclick="trackURL('http://money.rediff.com/compare/chart/10660001a10550001?src=comp_compare');return false;">Compare</a></div><span class="clear"></span>
+				<div class="compare_col1">Motherson Sumi Systems Ltd.</div><div class="compare_col2">242.50</div><div class="compare_col3"><a href="http://money.rediff.com/compare/chart/10660001a10670029" onclick="trackURL('http://money.rediff.com/compare/chart/10660001a10670029?src=comp_compare');return false;">Compare</a></div><span class="clear"></span>
+				<span class="ht5"></span><span class="blue curhand" onclick="hideDiv('compare_more');showDiv('compare_less');pass_logurl('comp_compare');"><img src="http://imworld.rediff.com/moneyrediff/pix/blank.gif" class="msprite minusbox_icon vmiddle" /> Show less companies</span>	</div>
+	</div>
+<span class="clear"></span><span class="ht15"></span><div class="dotline"></div><span class="ht15"></span>
+
+
+
+
+
+</div><!-- leftcontainer ends -->
+
+
+<!-- rightcontainer starts -->
+<div id="rightcontainer" class="rightcontainer">
+	<div class="add_money_widget">
+		<div><a href="http://money.rediff.com/widget/moneywiz" target="_blank">			
+			<div class="floatR mt2" >		
+				<img src="http://imworld.rediff.com/moneyrediff/pix/moneywiz-W-i2.png" />
+			</div>	
+			<div>	
+				<img src="http://imworld.rediff.com/moneyrediff/pix/moneywiz-W-i1.png" class="floatL money_widget_img"/>
+				<span class="bold">Get MoneyWiz</br>
+				on your webpage</span>				
+			</div>	
+			</a>
+		</div>
+	</div>
+	<span class="ht5"></span>
+	<div id="recentViewedStocks"></div>
+	<div id="world_right3" class="world_right3"></div>
+</div><!-- rightcontainer ends -->
+
+<span class="clear"></span>
+<div id="div_ad_Bottom"></div>
+<div class="div_footerlinks">
+<p class="f14 bold">ALL MONEYWIZ PAGES </p><div class="hrline1"></div><span class="ht10"></span>
+<table id="allpage_links" width="100%" border="0" cellpadding="0" cellspacing="5">
+<tr valign="top">
+<td><h4>Stocks</h4></td><td colspan="2"><h4>Mutual Funds</h4></td><td><h4>Investment tracking</h4></td><td></td><td></td>
+</tr>
+<tr valign="top">
+<td class="foot_col1">
+	<a href="http://money.rediff.com/companies" onclick="return footer_logurl(this);">A-Z</a><br />
+	<a href="http://zarabol.rediff.com/#!money/6801134" target="_new" onclick="enc_new(this,'http://track.rediff.com/click?url=___http://zarabol.rediff.com/%23!money/6801134___&lnk=zarabol_home-footer&newservice=moneyrt');">Market Voices</a><br />
+	Gainers - <a href="http://money.rediff.com/gainers" onclick="return footer_logurl(this);">Daily</a> | <a href="http://money.rediff.com/gainers/bse/weekly" onclick="return footer_logurl(this);">Weekly</a> | <a href="http://money.rediff.com/gainers/bse/monthly" onclick="return footer_logurl(this);">Monthly</a><br />
+	Losers - <a href="http://money.rediff.com/losers" onclick="return footer_logurl(this);">Daily</a> | <a href="http://money.rediff.com/losers/bse/weekly" onclick="return footer_logurl(this);">Weekly</a> | <a href="http://money.rediff.com/losers/bse/monthly" onclick="return footer_logurl(this);">Monthly</a><br />
+	<a href="http://money.rediff.com/companies/groups" onclick="return footer_logurl(this);">Group-wise listing</a><br />
+	<a href="http://money.rediff.com/companies/ipos" onclick="return footer_logurl(this);">IPO</a> | <a href="http://money.rediff.com/companies/ipos/top" onclick="return footer_logurl(this);">Top IPOs</a><br />
+	<a href="http://money.rediff.com/companies/ipos/recent" onclick="return footer_logurl(this);">Recent IPOs</a> | <a href="http://money.rediff.com/ipos/news" onclick="return footer_logurl(this);">IPO News</a><br />
+	<a href="http://money.rediff.com/companies/price-sorted" onclick="return footer_logurl(this);">Similar Price band</a><br />
+	<a href="http://money.rediff.com/companies/most-traded" onclick="return footer_logurl(this);">Most traded - By volumes</a><br />
+	<a href="http://money.rediff.com/companies/market-capitalisation" onclick="return footer_logurl(this);">Top 100 - By market capitalisation</a><br />
+	<a href="http://money.rediff.com/companies/results" onclick="return footer_logurl(this);">Latest Company Results</a><br />
+	<a href="http://money.rediff.com/companies/management-speaks" onclick="return footer_logurl(this);">Management Speaks</a><br />
+	<a href="http://money.rediff.com/news" onclick="return footer_logurl(this);">Market News</a>
+</td>
+<td class="foot_col2">
+	<a href="http://money.rediff.com/mutual-funds/top" onclick="return footer_logurl(this);">Top 25 schemes</a><br />
+	<a href="http://money.rediff.com/mutual-funds/high-risk" onclick="return footer_logurl(this);">High-risk, High-returns</a><br />
+	<a href="http://money.rediff.com/mutual-funds/med-risk" onclick="return footer_logurl(this);">Medium-risk, Medium-returns</a><br />
+	<a href="http://money.rediff.com/mutual-funds/low-risk" onclick="return footer_logurl(this);">Low-risk, Low-returns</a><br />
+	<a href="http://money.rediff.com/mutual-funds/gilt" onclick="return footer_logurl(this);">Gilt Funds</a><br />
+	<a href="http://money.rediff.com/mutual-funds/funds-of-funds"  onclick="return footer_logurl(this);">Funds of Funds</a><br />
+	<a href="http://money.rediff.com/mutual-funds/special" onclick="return footer_logurl(this);">Special Funds</a><br />
+	<a href="http://money.rediff.com/mutual-funds/liquid" onclick="return footer_logurl(this);">Liquid Funds</a><br />
+	<a href="http://money.rediff.com/mutual-funds/dynamic-asset-allocation" onclick="return footer_logurl(this);">Dynamic Asset Allocation</a><br />
+	<a href="http://money.rediff.com/mutual-funds/nfos" onclick="return footer_logurl(this);">NFOs</a><br />
+	<a href="http://money.rediff.com/mutual-funds/top" onclick="return footer_logurl(this);">MF Selector</a>
+</td>
+<td class="foot_col3">
+	<a href="http://money.rediff.com/mutual-funds/equity/elss" onclick="return footer_logurl(this);">Equity - ELSS</a><br />
+	<a href="http://money.rediff.com/mutual-funds/equity/index" onclick="return footer_logurl(this);">Equity - Index Funds</a><br />
+	<a href="http://money.rediff.com/mutual-funds/equity/sector" onclick="return footer_logurl(this);">Equity - Sector Funds</a><br />
+	<a href="http://money.rediff.com/mutual-funds/equity/balanced" onclick="return footer_logurl(this);">Equity - Balance Fund</a><br />
+	<a href="http://money.rediff.com/mutual-funds/equity/diversified" onclick="return footer_logurl(this);">Equity - Diversified Fund</a><br />
+	<a href="http://money.rediff.com/mutual-funds/news" onclick="return footer_logurl(this);">MF News</a><br />
+	<a href="http://money.rediff.com/budget-2014-india" onclick="return footer_logurl(this);">Budget 2014</a>
+</td>
+<td class="foot_col4">
+	<a href="http://portfolio.rediff.com/money/jsp/portfolio_login_process.jsp">My Portfolio</a><br />
+	<a href="http://portfolio.rediff.com/money/jsp/stockwatch_login_process.jsp">My Watch List</a><br />
+	<a href="http://money.rediff.com/tools/what-if" onclick="return footer_logurl(this);">If You Had Invested...</a><br />
+	<a href="http://money.rediff.com/indicators" onclick="return footer_logurl(this);">Global Indicators</a><br />
+	<a href="http://money.rediff.com/tools/forex" onclick="return footer_logurl(this);">Forex Converter</a><br />
+	<a href="http://money.rediff.com/indices" onclick="return footer_logurl(this);">Market Indices</a><br />
+	<a href="http://money.rediff.com/sectors" onclick="return footer_logurl(this);">Sectoral Indices</a><br />
+	<a href="http://money.rediff.com/indices/world" onclick="return footer_logurl(this);">World Indices</a><br />
+	Chart - <a href="http://money.rediff.com/tools/sensex" onclick="return footer_logurl(this);">Sensex</a> | <a href="http://money.rediff.com/tools/nifty" onclick="return footer_logurl(this);">Nifty</a><br />
+	<a href="http://money.rediff.com/tools/astrology" onclick="return footer_logurl(this);">Market Astrology</a>
+</td>
+<td class="foot_col5">&nbsp;
+</td>
+</tr>
+</table>
+</div>
+<center>
+<div class="footer"><img src="http://imworld.rediff.com/moneyrediff/pix/blank.gif" alt="rediff on the net" class="red_on_net_img">&copy; 2015 Rediff.com India Limited. All rights reserved. <a href="http://www.rediff.com/disclaim.htm">Disclaimer</a> - <a href="http://www.rediff.com/money/terms.html">Terms of Service</a> - <a href="http://www.rediff.com/w3c/policy.html">Privacy Policy</a> - <a href="http://money.rediff.com/feedback" onclick="return footer_logurl(this);"><b>Feedback</b></a></div>
+<span class="ht10"></span>
+</center>
+
+<script type="text/javaScript">
+showSigninInfo();
+
+function  footer_logurl(obj)
+{
+	if(typeof(glb_currentpage) != "undefined" )
+	{
+		var c_href = obj.href ;
+		if(glb_currentpage == "home")
+		{
+			if(c_href.indexOf('?') == -1 )
+			{
+				document.location.href = c_href + "?src=all_pg";
+			}
+			else
+			{
+				document.location.href = c_href + "&src=all_pg";
+			}
+			return false;
+		}
+		else if(glb_currentpage == "company")
+		{
+			if(c_href.indexOf('?') == -1 )
+			{
+				document.location.href = c_href + "?src=comp_all_pg";
+			}
+			else
+			{
+				document.location.href = c_href + "&src=comp_all_pg";
+			}
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+	else
+	{
+		return true;
+	}
+}
+
+</script>
+
+<script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/money_RuW.min.js"></script>
+</div><!-- wrapper ends -->
+
+
+<div id="replyFormDiv" class="popupcontainer"></div>
+<div id="retweetFormDiv" class="popupcontainer"></div>
+<div id="shareThisFramecontainer" class="sharethisframe"></div>
+<div id="ppage" class="MsgPopup">
+	<form name="add_pf_co" class="alignL">
+	<input name="code" value="" type="hidden" />
+	<input name="companycode" value="10660001" type="hidden" />
+	<input name="companyname" value="Amtek Auto Ltd." type="hidden" />
+	<input name="flag" value="" type="hidden" />
+	<a onclick="xcloseAddPopup('10660001','portfolio');hideDiv('datepicker');hideDiv('datepickeriframe');" href="javascript:void(0);" title="Cancel" class="iconClose">Close</a>
+	<table cellspacing="0" cellpadding="4" border="0" class="f14">
+	<tr><td colspan="3"><h6 class="f14 bold">Add Amtek Auto Ltd. to your Portfolio</h6><span class="ht10"></span></td></tr>
+	<tr valign="top"><td><label for="stockAddDate">Date of purchase</label></td><td><input name="date" readonly="readonly" id="date" size="15" type="text" class="f14" /></td><td><a href="javascript:void(0);" onclick="displayDatePicker('date', this);" class="calender" title="Calendar"><img src="http://imworld.rediff.com/moneyrediff/pix/blank.gif" class="calender" /></a></td></tr>
+	<tr><td><label for="addstockqty">Quantity</label></td><td><input name="quantity" size="15" type="text" class="f14" /></td><td>&nbsp;</td></tr>
+	<tr><td><label for="addstockprice">Purchase price</label></td><td><input name="price" id="price" size="15" type="text" class="f14" /></td><td>&nbsp;</td></tr>
+	<tr><td></td><td><input name="bt" title="Submit" value="Add Stock" onclick="javascript:validater();" type="button" class="f14" /><input name="refmoney" value="1" type="hidden" /></td><td>&nbsp;</td></tr>
+	</table>
+	<div id="err_div" name="err_div" style="text-align:left" class="bold red"></div>
+	</form>
+	<span class="ht5"></span>
+	<div class="f11 alignL">*Portfolio will be calculated based on BSE values</div>
+</div>
+
+<div id="swpage" class="MsgPopup">
+	<form name="stockwatch_popup">
+	<input name="code" value="" type="hidden" />
+	<input name="flag" value="" type="hidden" />
+	<input name="transDetails" value="" type="hidden" />
+	<input name="company-id" value="" id="company-id" type="hidden" />
+	<input name="increase-price" id="increase-price" value="" type="hidden" />
+	<input name="decrease-price" id="decrease-price" value="" type="hidden" />
+	<input name="refmoney" value="1" type="hidden" />
+	<a onclick="xcloseAddPopup('10660001','sw');" href="javascript:void(0);" title="Cancel" class="iconClose">Close</a>
+	<table cellspacing="0" cellpadding="4" border="0" class="f14">
+	<tr valign="top"><td colspan="2"><h6 class="f14 bold">Add Amtek Auto Ltd. to your Watchlist</h6><span class="ht10"></span><div>Alert me if price...</b></div><span class="ht10"></span></td></tr>
+	<tr valign="top"><td><label for="stockAddDate">Goes above Rs.</label></td><td><input name="maxprice" id="maxprice" size="15" type="text" /></td></tr>
+	<tr valign="top"><td><label for="stockAddDate">Goes below Rs.</label></td><td><input name="minprice" id="minprice" size="15" type="text" /></td></tr>
+	<tr valign="top"><td></td><td><input name="Submit" title="Submit" value="Add" onclick="javascript:return checkalertvalidate();" type="button" /></td></tr>
+	</table>
+	<div id="sw_err_div" name="sw_err_div" style="text-align:left" class="bold red"></div>
+	</form>
+	<span class="ht5"></span>
+	<div class="f11 alignL">*Watchlist will be based on BSE values</div>
+</div>
+<div id="swmfpage" class="MsgPopup"></div>
+<div id="pmfpage" class="MsgPopup"></div>
+
+<div id="popupSuccess" class="MsgPopup">
+	<div class="clear ht100"></div>
+	<div class="popupform"><a onclick="closePopup('popupSuccess');" href="javascript:void(0);" title="Cancel" class="iconClose">Close</a><span id="succmsg"></span></div>
+</div>
+
+<div id="addportfoliopopup" class="moneypopup1"></div>
+<div class="popupcontainer"><div id="div_signup"></div><div id="div_confirm"></div></div><div id="div_signin"></div>
+
+
+
+<script type="text/javascript">
+alsoSeeStock( "Amtek Auto Ltd.", "10660001" );
+
+setCurrentState('company');  //determine to show bse or nse div
+
+	if(getCurrentState() == 'BSE')
+		current_status("10660001");
+	else
+		current_status("AMTEKAUTO");
+
+
+var OAS_sitepage = "inmoneySC.rediff.com/stock-company.htm";
+var OAS_listpos = "BOX03,LB02,TopLeft,Bottom,TopRight";
+</script>
+
+
+
+
+<script type="text/javascript">
+
+	aRates[0] = "42.25";
+	aRates[1] = "40.15";
+	aRates[2] = "43.35";
+	aRates[3] = "153.3";
+	aRates[4] = "165.9";
+	var aBonus = new Array();
+	var aSplit = new Array();
+	get_result();
+
+var foot_visible = 0;
+var cmpcall = 0;
+jQuery(window).scroll(function(){ 
+	if(cmpcall == 0){
+		cmpcall = 1;
+		pass_logurl("comp_page_scroll");  
+	}
+	var scrollTop = jQuery(window).scrollTop();    
+	if((scrollTop > 750) && (scrollTop < 1500))
+	{	
+		if(foot_visible == 0){
+			foot_visible = 1;
+			pass_logurl("vis_foot");		
+		}
+	}
+	else if(scrollTop == 0)
+	{
+		cmpcall = 0;
+		foot_visible = 0;
+	}  
+});
+</script>
+
+
+<script language="JavaScript" src="http://im.rediff.com/uim/common/realmedia_banner_1_6.js"></script>
+<script type="text/javascript">var glb_location ="";glb_location = getCookie('RLOC');if(glb_location){if(glb_location.indexOf("ind") != -1){glb_location = "india";}}</script>
+
+<div id="world_right1_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("world_right1")){OAS_AD('BOX08');}</script></div>
+
+<div id="world_right3_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("world_right3")){OAS_AD('BOX03');}</script></div>
+
+<div id="world_top1_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("world_top1")){OAS_AD('x03');}</script></div>
+
+<div id="div_transitionAD_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("div_transitionAD")){OAS_AD('TopLeft');}</script></div>
+
+<div id="div_ad_Top_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("div_ad_Top")){OAS_AD('Top');}</script></div>
+
+<div id="div_hm_ad_x04_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("div_hm_ad_x04")){OAS_AD('x04');}</script></div>
+
+<div id="div_hm_ad_x05_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("div_hm_ad_x05")){OAS_AD('x05');}</script></div>
+
+<div id="div_ad_LB02_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("div_ad_LB02")){OAS_AD('LB02');}</script></div>
+
+<div id="div_hm_ad_x06_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("div_hm_ad_x06")){OAS_AD('x06');}</script></div>
+
+<div id="div_ad_Bottom_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("div_ad_Bottom")){OAS_AD('Bottom');}</script></div>
+
+<div id="div_ad_TopRight_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("div_ad_TopRight")){OAS_AD('TopRight');}</script></div>
+
+<script TYPE="text/javascript">
+
+if(document.getElementById("world_right1"))
+{
+	var hdn = document.getElementById("world_right1_hidden");
+	var vsbl = document.getElementById("world_right1");
+	copyInnerHtml(hdn, vsbl);
+}
+if(document.getElementById("world_right3"))
+{
+	var hdn = document.getElementById("world_right3_hidden");
+	var vsbl = document.getElementById("world_right3");
+	copyInnerHtml(hdn, vsbl);
+}
+if(document.getElementById("world_top1"))
+{
+	var hdn = document.getElementById("world_top1_hidde

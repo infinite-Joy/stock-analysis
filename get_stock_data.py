@@ -3,9 +3,9 @@ import requests
 import time
 
 from company_page import CompanyPage
+from balance_sheet import BalanceSheet
 
-def get_company_primary_stats(tree):
-    company = CompanyPage(tree)
+def get_company_primary_stats(company, tree):
     pe_ratio = company.get_pe_ratio(tree)
     eps = company.get_eps(tree)
     price_of_stock = company.get_price_of_stock(tree)
@@ -16,12 +16,23 @@ def get_company_primary_stats(tree):
 def company_page_analysis(stock_company):
     page = requests.get('http://money.rediff.com/%s' % stock_company)
     time.sleep(2)
-    tree = html.fromstring(page.text)
-    primary_stats = get_company_primary_stats(tree)
-    print primary_stats
-    if all([primary_stats.get('pe_ratio') < 15, primary_stats.get('eps') > 0, primary_stats.get('price_of_stock') < ((primary_stats.get('fifty_two_wk_high') - primary_stats.get('fifty_two_wk_low'))/2)]):
-        # go to next page
-        return stock_company
+    tree = html.fromstring(page.content)
+    company = CompanyPage(tree)
+    primary_stats = get_company_primary_stats(company, tree)
+    if all([primary_stats.get('pe_ratio') > 0, primary_stats.get('pe_ratio') < 15, primary_stats.get('eps') > 0, primary_stats.get('price_of_stock') < ((primary_stats.get('fifty_two_wk_high') - primary_stats.get('fifty_two_wk_low'))/2)]):
+        # go to balance sheet page for further analysis
+        balance_sheet = tree.xpath('/html/body/div[4]/div[8]/div[8]/div[2]/div/a[4]/@href')
+        balance_sheet_link = company.get_balance_sheet_link(tree)
+        balance_sheet_page = requests.get('%s' % ''.join(balance_sheet_link))
+        balance_sheet_tree = html.fromstring(balance_sheet_page.content)
+        balance_sheet = BalanceSheet(balance_sheet_tree)
+        current_assets_loans_advances = balance_sheet.get_current_assets_loans_advances(balance_sheet_tree)
+        current_liabilities_and_provisions = balance_sheet.get_current_liabilities_and_provisions(balance_sheet_tree)
+        total_net_current_assets = balance_sheet.get_total_net_current_assets(balance_sheet_tree)
+        if total_net_current_assets > current_liabilities_and_provisions:
+            #maybe go to next page
+            return stock_company
+        
     else:
         pass
 
@@ -31,13 +42,6 @@ def main():
     for stock_company in stock_companies:
         companies_to_invest.append(company_page_analysis(stock_company))
     print companies_to_invest
-    
-    # balance_sheet = tree.xpath('/html/body/div[4]/div[8]/div[8]/div[2]/div/a[4]/@href')
-    # print "".join(balance_sheet)
-    # balance_sheet_page = requests.get('%s' % ''.join(balance_sheet))
-    # tree = html.fromstring(balance_sheet_page.text)
-    # Current_assets_loans_advances = tree.xpath('/html/body/div[2]/div[5]/table/tbody/tr[20]/td[3]/text()')
-    # print Current_assets_loans_advances
     
 
 if __name__ == '__main__':

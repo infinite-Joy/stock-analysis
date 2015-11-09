@@ -1,13 +1,12 @@
 from lxml import html
-import requests
+import os
 import time
 
-from try_module import trying as trying
 from company_page import CompanyPage
 
-stock_company = "Amtek-Auto-Ltd"
-page = requests.get('http://money.rediff.com/%s' % stock_company)
-tree = html.fromstring(page.text)
+f = open(r"G:\Python\projects\stock_analysis\stock_analysis\tests\page_content")
+page_content = f.read()
+tree = html.fromstring(page_content)
 company = CompanyPage(tree)
 
 def test_get_pe_ratio():
