@@ -46,12 +46,18 @@ def company_page_analysis(stock_company):
                 
     return
 
+def companies_to_investigate():
+    companies = []
+    f = open('top_500_companies.txt', 'r')
+    for company in f:
+        companies.append(company)
+    
+    return companies
+    
 if __name__ == '__main__':
-    stock_companies = ["Amtek-Auto-Ltd", "Chambal-Fertilisers-Chemicals-Ltd"]
+    stock_companies = companies_to_investigate()
     jobs = []
     for stock_company in stock_companies:
-        # print "operating on company", stock_company
-        # companies_to_invest.append(company_page_analysis(stock_company))
         p = multiprocessing.Process(target=company_page_analysis, args=(stock_company,))
         jobs.append(p)
         p.start()
