@@ -5,7 +5,7 @@ import multiprocessing
 
 # logging
 import logging
-logging.basicConfig(filename='log/exception_logging.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s %(name)s %(message)s')
+logging.basicConfig(filename='/log/exception_logging.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s %(name)s %(message)s')
 logger=logging.getLogger(__name__)
 
 from company_page import CompanyPage
@@ -56,17 +56,18 @@ def company_page_analysis(stock_company):
                 
     return
 
-if __name__ == '__main__':
-    stock_companies = ["Amtek-Auto-Ltd", "Chambal-Fertilisers-Chemicals-Ltd"]
-    companies_to_invest = []
-    for stock_company in stock_companies:
-        # print "operating on company", stock_company
-        # companies_to_invest.append(company_page_analysis(stock_company))
-        p = multiprocessing.Process(target=company_page_analysis, args=(stock_company,))
-        companies_to_invest.append(p)
-        p.start()
-    print companies_to_invest
+def companies_to_investigate():
+    companies = []
+    f = open('top_500_companies.txt', 'r')
+    for company in f:
+        companies.append(company)
     
-
-# if __name__ == '__main__':
-    # main()
+    return companies
+    
+if __name__ == '__main__':
+    stock_companies = companies_to_investigate()
+    jobs = []
+    for stock_company in stock_companies:
+        p = multiprocessing.Process(target=company_page_analysis, args=(stock_company,))
+        jobs.append(p)
+        p.start()
