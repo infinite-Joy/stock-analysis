@@ -1,0 +1,14 @@
+2015-11-15 21:13:50,627 INFO requests.packages.urllib3.connectionpool Starting new HTTP connection (1): money.rediff.com
+2015-11-15 21:13:50,627 INFO requests.packages.urllib3.connectionpool Starting new HTTP connection (1): money.rediff.com
+2015-11-15 21:13:50,773 DEBUG requests.packages.urllib3.connectionpool "GET /Chambal-Fertilisers-Chemicals-Ltd HTTP/1.1" 302 20
+2015-11-15 21:13:50,783 DEBUG requests.packages.urllib3.connectionpool "GET /Amtek-Auto-Ltd HTTP/1.1" 302 20
+2015-11-15 21:13:51,000 DEBUG requests.packages.urllib3.connectionpool "GET /quotes/all/Chambal-Fertilisers-Chemicals-Ltd HTTP/1.1" 302 20
+2015-11-15 21:13:51,010 DEBUG requests.packages.urllib3.connectionpool "GET /quotes/all/Amtek-Auto-Ltd HTTP/1.1" 302 20
+2015-11-15 21:13:51,690 DEBUG requests.packages.urllib3.connectionpool "GET /companies/Amtek-Auto-Ltd/10660001 HTTP/1.1" 200 None
+2015-11-15 21:13:51,760 DEBUG requests.packages.urllib3.connectionpool "GET /companies/Chambal-Fertilisers-Chemicals-Ltd/12100013 HTTP/1.1" 200 None
+2015-11-15 21:13:53,845 INFO requests.packages.urllib3.connectionpool Starting new HTTP connection (1): money.rediff.com
+2015-11-15 21:13:53,851 INFO requests.packages.urllib3.connectionpool Starting new HTTP connection (1): money.rediff.com
+2015-11-15 21:13:54,134 DEBUG requests.packages.urllib3.connectionpool "GET /companies/Chambal-Fertilisers-Chemicals-Ltd/12100013/balance-sheet HTTP/1.1" 200 None
+2015-11-15 21:13:54,184 DEBUG requests.packages.urllib3.connectionpool "GET /companies/Amtek-Auto-Ltd/10660001/balance-sheet HTTP/1.1" 200 None
+2015-11-15 21:13:54,188 INFO requests.packages.urllib3.connectionpool Starting new HTTP connection (1): money.rediff.com
+2015-11-15 21:13:54,496 DEBUG requests.packages.urllib3.connectionpool "GET /companies/Chambal-Fertilisers-Chemicals-Ltd/12100013/ratio HTTP/1.1" 200 None
