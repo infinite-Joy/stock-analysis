@@ -5,12 +5,18 @@ import multiprocessing
 
 # logging
 import logging
-logging.basicConfig(filename='/log/exception_logging.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s %(name)s %(message)s')
+logging.basicConfig(filename='log/exception_logging.txt', level=logging.DEBUG, format='%(asctime)s %(levelname)s %(name)s %(message)s')
 logger=logging.getLogger(__name__)
 
 from company_page import CompanyPage
 from balance_sheet import BalanceSheet
 from ratio_module import Ratio
+
+# constants
+MIN_PE_THRESHOLD = 0
+MAX_PE_THRESHOLD = 15
+MIN_EPS_THRESHOLD = 0
+
 
 def get_company_primary_stats(company, tree):
     pe_ratio = company.get_pe_ratio(tree)
@@ -27,7 +33,7 @@ def company_page_analysis(stock_company):
         tree = html.fromstring(page.content)
         company = CompanyPage(tree)
         primary_stats = get_company_primary_stats(company, tree)
-        if all([primary_stats.get('pe_ratio') > 0, primary_stats.get('pe_ratio') < 15, primary_stats.get('eps') > 0, primary_stats.get('price_of_stock') < ((primary_stats.get('fifty_two_wk_high') + primary_stats.get('fifty_two_wk_low'))/2)]):
+        if all([primary_stats.get('pe_ratio') > MIN_PE_THRESHOLD, primary_stats.get('pe_ratio') < MAX_PE_THRESHOLD, primary_stats.get('eps') > MIN_EPS_THRESHOLD, primary_stats.get('price_of_stock') < ((primary_stats.get('fifty_two_wk_high') + primary_stats.get('fifty_two_wk_low'))/2)]):
         
         
             #get all links
@@ -67,7 +73,12 @@ def companies_to_investigate():
 if __name__ == '__main__':
     stock_companies = companies_to_investigate()
     jobs = []
+    pool = multiprocessing.Pool(processes=10)
     for stock_company in stock_companies:
-        p = multiprocessing.Process(target=company_page_analysis, args=(stock_company,))
-        jobs.append(p)
-        p.start()
+        # p = multiprocessing.Process(target=company_page_analysis, args=(stock_company,))
+        # result = pool.apply_async(f, [10])
+        # jobs.append(p)
+        # p.start()
+        pool.apply_async(company_page_analysis, args=(stock_company,))
+    pool.close()
+    pool.join()
