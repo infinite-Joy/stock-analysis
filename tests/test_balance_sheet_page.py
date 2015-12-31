@@ -5,6 +5,8 @@ from balance_sheet import BalanceSheet
 
 f = open(r"G:\Python\projects\stock_analysis\stock_analysis\tests\balance_sheet_page_content")
 balance_sheet_page_content = f.read()
+f.close()
+
 balance_sheet_tree = html.fromstring(balance_sheet_page_content)
 balance_sheet = BalanceSheet(balance_sheet_tree)
 
