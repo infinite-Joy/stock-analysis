@@ -22,4 +22,8 @@ class Ratio:
         return trying(tree, '/html/body/div[2]/div[5]/table/tbody/tr[6]/td[6]/text()')
         
     def consistent_dividend_payout(self, tree):
-        return True
+        return all([self.get_present_year_dividend_present_year_dividend_per_share(tree) > 0,
+                    self.get_present_year_dividend_present_year_dividend_per_share_minus1(tree) > 0,
+                    self.get_present_year_dividend_present_year_dividend_per_share_minus2(tree) > 0,
+                    self.get_present_year_dividend_present_year_dividend_per_share_minus3(tree) > 0,
+                    self.get_present_year_dividend_present_year_dividend_per_share_minus4(tree) > 0])

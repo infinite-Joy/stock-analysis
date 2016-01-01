@@ -53,7 +53,7 @@ def company_page_analysis(stock_company):
                 ratio_page = requests.get('%s' % ''.join(ratio_link))
                 ratio_tree = html.fromstring(ratio_page.content)
                 ratio = Ratio(ratio_tree)
-                if ratio.exists_dividend(ratio_tree):
+                if ratio.consistent_dividend_payout(ratio_tree):
                     print stock_company
                     
     except Exception as err:

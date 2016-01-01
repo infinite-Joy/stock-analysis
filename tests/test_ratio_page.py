@@ -39,3 +39,6 @@ def test_get_present_year_dividend_ratio4():
     print present_year_dividend_present_year_dividend_per_share
     assert present_year_dividend_present_year_dividend_per_share != 0.00
     assert isinstance(present_year_dividend_present_year_dividend_per_share, float)
+    
+def test_consistent_dividend_payout():
+    assert ratio.consistent_dividend_payout(ratio_tree) == True
