@@ -18,7 +18,7 @@ MAX_PE_THRESHOLD = 15
 MIN_EPS_THRESHOLD = 0
 
 
-def get_company_primary_stats(company, tree):
+def _get_company_primary_stats(company, tree):
     pe_ratio = company.get_pe_ratio(tree)
     eps = company.get_eps(tree)
     price_of_stock = company.get_price_of_stock(tree)
@@ -32,7 +32,7 @@ def company_page_analysis(stock_company):
         time.sleep(2)
         tree = html.fromstring(page.content)
         company = CompanyPage(tree)
-        primary_stats = get_company_primary_stats(company, tree)
+        primary_stats = _get_company_primary_stats(company, tree)
         if all([primary_stats.get('pe_ratio') > MIN_PE_THRESHOLD, primary_stats.get('pe_ratio') < MAX_PE_THRESHOLD, primary_stats.get('eps') > MIN_EPS_THRESHOLD, primary_stats.get('price_of_stock') < ((primary_stats.get('fifty_two_wk_high') + primary_stats.get('fifty_two_wk_low'))/2)]):
         
         
@@ -53,7 +53,7 @@ def company_page_analysis(stock_company):
                 ratio_page = requests.get('%s' % ''.join(ratio_link))
                 ratio_tree = html.fromstring(ratio_page.content)
                 ratio = Ratio(ratio_tree)
-                if ratio.exists_dividend(ratio_tree):
+                if ratio.consistent_dividend_payout(ratio_tree):
                     print stock_company
                     
     except Exception as err:
@@ -75,10 +75,6 @@ if __name__ == '__main__':
     jobs = []
     pool = multiprocessing.Pool(processes=10)
     for stock_company in stock_companies:
-        # p = multiprocessing.Process(target=company_page_analysis, args=(stock_company,))
-        # result = pool.apply_async(f, [10])
-        # jobs.append(p)
-        # p.start()
         pool.apply_async(company_page_analysis, args=(stock_company,))
     pool.close()
     pool.join()

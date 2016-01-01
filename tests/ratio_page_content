@@ -1,0 +1,914 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+	NTPC Ltd. 
+			- ratios like PE, profitability, EPS, liquidity, etc.
+	</title>
+<meta http-equiv="refresh" content="180">
+<meta name="keywords" content="Rediff.com, BSE, NSE, Stocks, Get quote, Advertise">
+<meta name="author" content="Rediff MoneyWiz">
+<meta name="Description" content="Rediff MoneyWiz, the personal finance service from Rediff.com equips the user with tools and information in the form of graphs, charts, expert advice, and more to stay up-to-date and make informed decisions.">
+<meta name="viewport" content="width=990">
+<meta name="DC.creator" content="Rediff MoneyWiz - http://money.rediff.com">
+<meta name="DC.subject" content="Stock prices, charts, news, and more">
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="1 day">
+<meta http-equiv="imagetoolbar" content="false">
+<meta name="MSSmartTagsPreventParsing" content="true">
+<link rel="stylesheet" href="http://imworld.rediff.com/moneyrediff/style_2/moneywiz_37.css" type="text/css" />
+<script type="text/javascript">
+var cdn_domain = "http://money.rediff.com";
+var org_domain = "http://money.rediff.com";
+var portfolio_domain = "http://portfolio.rediff.com";
+var imgpath = "http://imworld.rediff.com/moneyrediff/pix";
+var budgetYear = "2015";
+var myRediffUrl = 'http://mypage.rediff.com/';
+var pageRediffUrl = 'http://pages.rediff.com/';
+var zarabolRediffUrl = 'http://zarabol.rediff.com';
+var portfolioRediffUrl = 'http://portfolio.rediff.com';
+var rootRediffUrl = 'http://www.rediff.com';
+var ajaxCall = "on";
+var widgetGraphStartTime = "09";
+</script>
+<link rel="shortcut icon" type="image/x-icon" href="http://www.rediff.com/favicon.ico" />
+<script type="text/javascript">
+function timenow() {
+	t = (((new Date).getTime())*1000)+Math.round(Math.random()*1000);
+	var querystring = "";
+	var tmp_ref = encodeURIComponent(document.referrer);		
+	var tmp_url = document.location.href ;	
+	var curr_url = tmp_url.split("?");		
+	if(curr_url[1]){querystring = curr_url[1];}    	
+	if((tmp_ref == null) || (tmp_ref.length == 0)){tmp_ref = "";}	
+	if(tmp_ref != ""){t += "&ref="+tmp_ref;}	
+	if(querystring != "" ){t += "&"+querystring;}
+	
+			var url11 = "http://metric.money.rediff.com/frames/ratio.htm?companyCode=15130025&"+'done='+t;
+		
+	if(document.getElementById("logwatch")){document.getElementById("logwatch").src = url11;}
+}
+</script>
+
+
+<script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/jquery.min.js"></script>
+<script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/json2.min.js"></script>
+<script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/moneyCommon_22.min.js"></script>
+<script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/comp_stat_minimal_17.min.js"></script>
+
+<style type="text/css">
+table.dataTable {
+    clear: left;
+    width: 100%;
+    font-size:12px;
+    border-collapse: collapse;
+}
+table.dataTable thead tr th, table.dataTable thead tr td {
+    background: #f5f5f5;
+    font-weight: bold;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+table.dataTable th, table.dataTable td {
+    padding: 6px;
+    vertical-align: bottom;
+}
+table.dataTable th {text-align: left;}
+table.dataTable td{border-bottom:1px solid #e5e5e5;}
+table.dataTable .numericalColumn{text-align:right;}
+table.dataTable .noWrap {/*whitespace: no-wrap;*/white-space:nowrap;}
+table.dataTable tbody tr:hover {background: #e5f5f5;}
+table.dataTable th a, table.dataTable th a:active{text-decoration:none;color:#000000;border:none;outline: none;}
+.div_topgainerhd{border-bottom: 1px solid #e5e5e5;padding:0 0 5px 0;}
+.bottom_ad_container{position:fixed;width: 100%;bottom:0;left:0;right:0;text-align:center;}.div_ad_bottom{margin:0 auto;width:940px;}@media only screen and (device-width: 768px){.bottom_ad_container{position:relative;width:100%;bottom:0;left:0;text-align:center;}}
+</style>
+
+
+</head>
+<body onload="animateAdPanel();">
+<iframe src="about:blank" id="logwatch" name="logwatch" width="1" height="1" FRAMEBORDER="0" MARGINWIDTH="0" MARGINHEIGHT="0"  class="hide"></iframe>
+<script type="text/javascript">timenow();</script>
+<div id="MainDv" class="MainDv hide"></div>
+<iframe id="Ifrm" class="Ifrm hide"></iframe>
+<!-- wrapper starts -->
+<div id="wrapper" class="wrapper">
+<div class="toplogobar">
+	<a href="http://www.rediff.com/">rediff.com</a><span class="clear"></span>
+	<div class="floatL"><a href="http://money.rediff.com"><span class="block msprite moneywizlogo negative curhand">Rediff Moneywiz</span></a></div>
+	<ul class="ul_top_tabs">
+		<li><a href="http://money.rediff.com" class="blue" onclick="return topbar_logurl(this);" >Home</a></li>
+		<li><a href="http://portfolio.rediff.com/portfolio" onclick="return topbar_logurl(this);">My Portfolio</a></li>
+		<li><a href="http://portfolio.rediff.com/watchlist" onclick="return topbar_logurl(this);">My Watchlist</a></li>
+		<li><a href="http://money.rediff.com/indicators" class="blue" onclick="return topbar_logurl(this);">Trends</a></li>
+		<li><a href="http://zarabol.rediff.com/#!money/6801134" target="_new" onclick="enc_new(this,'http://track.rediff.com/click?url=___http://zarabol.rediff.com/%23!money/6801134___&lnk=zarabol_home-top_nav&newservice=moneyrt');">Market Voices</a></li>
+		<li><a href="http://money.rediff.com/news" class="blue" onclick="return topbar_logurl(this);">Market News</a></li>
+		<li id="moretablink" title="Show more" onclick="showMore_Less('moretablink');" class="blue curhand"><span>More </span><span class="f10">&#9660;</span></li>
+	</ul>
+        <div class="toprightlinks" id="div_topright"><span id="username">Hi Guest</span><br /><a href="http://money.rediff.com/feedback" onclick="return topbar_logurl(this);">Feedback</a><span id="signin_info"></span></div>
+	<span class="clear"></span>
+</div>
+<div class="greyline"></div>
+<div id="moremoney" class="hide bggrey1">
+	<div title="Close" onclick="showMore_Less('moretablink');" class="floatR curhand"><b>X</b>&nbsp; &nbsp;</div>
+	<ul class="ul_top_tabs floatL">
+		<li><a href="http://money.rediff.com/tools/what-if" onclick="return topbar_logurl(this);">Investment Tool</a></li>
+		<li><a href="http://money.rediff.com/tools/forex" onclick="return topbar_logurl(this);">Forex</a></li>
+		<li><a href="http://money.rediff.com/indices" onclick="return topbar_logurl(this);">Indices</a></li>
+		<li><a href="http://money.rediff.com/sectors" onclick="return topbar_logurl(this);">Sectors</a></li>
+		<li><a href="http://money.rediff.com/mutual-funds" onclick="return topbar_logurl(this);">Mutual Funds</a></li>
+		<li><a href="http://money.rediff.com/gainers" onclick="return topbar_logurl(this);">Gainers / Losers</a></li>
+		<li><a href="http://money.rediff.com/directory" onclick="return topbar_logurl(this);">All Pages</a></li>
+	</ul>
+	<div id="world_right10" class="world_right10"></div>
+  	<span class="clear"></span><span class="ht10"></span>
+</div>
+
+
+<script type="text/javascript">
+var endyear = "";
+var mypage_domain = "http://mypage.rediff.com";
+var imgpath	= "http://imworld.rediff.com/moneyrediff/pix";
+
+
+function  topbar_logurl(obj)
+{
+	if(typeof(glb_currentpage) != "undefined" )
+	{
+		var c_href = obj.href ;
+		if(glb_currentpage == "home")
+		{
+			if(c_href.indexOf('feedback') >= 0 )
+			{
+				document.location.href = c_href + "?src=top_nav&Rand=" + Math.random();
+			}
+			else
+			{
+				document.location.href = c_href + "?src=top_nav";
+			}
+			return false;
+		}
+		else if(glb_currentpage == "company")
+		{
+			if(c_href.indexOf('feedback') >= 0 )
+			{
+				document.location.href = c_href + "?src=comp_top_nav&Rand=" + Math.random();
+			}
+			else
+			{
+				document.location.href = c_href + "?src=comp_top_nav";
+			}
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+	else
+	{
+		return true;
+	}
+}
+document.body.onClick = 'Suggestionr.destroysug';
+
+</script><script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/ws-global_12.min.js"></script>
+<div class="srchbar-2 floatL">
+<form onsubmit="return submitSearch()" action="" method="post" id="queryTop" name="srchform">
+<div class="floatL">
+	<div class="f14 floatL"><span class="bold">REAL-TIME QUOTE </span><br /><span class="grey f14">Enter Company or MF</span></div>
+	<div class="floatL"><div><input type="text" value="" class="txt_srch" name="srchword" id="srchword" autocomplete="off" /></div><div class="eg">e.g. Tata motors, Reliance MF, 500570</div>
+	<input type="hidden" value='' id="hidden_url"/></div>
+	<div class="floatL"><div><input type="submit" class="msprite btn_srch" value="  " /></div></div>
+	<input type="hidden" value="web" id="snsSRC" name="snssrc" />
+	<span class="clear"></span>
+</div>
+</form>
+<div id="sug" class="sug hide" style="margin: 45px 0 0 3px;"><div id="sugbox"></div></div>
+</div>
+
+<script type="text/javascript">Suggestionr.initr('sugbox','sug','srchword',true);</script>
+
+<script>
+	var _comscore = _comscore || [];
+	_comscore.push({ c1: "2", c2: "6035613" });
+	(function(){
+	var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+	s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+	el.parentNode.insertBefore(s, el);
+	})();
+</script>
+
+<noscript><img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6035613&amp;cv=2.0&amp;cj=1"></noscript><!-- leftcontainer starts -->
+<div id="leftcontainer" class="leftcontainer">
+
+<div class="div_topgainerhd">
+	<div class="f22 bold">NTPC Ltd. - Research Center</div>
+	<div style="margin-top: 5px;">
+		<div class="floatL grey2">532555 NTPC  Group (A) BSE data</div>
+		<div class="floatR">
+
+			<div class="div_addto"><div class="msprite btn_wts_left"></div><div onclick="showDivPopupNew('15130025','sw');document.getElementById('maxprice').focus();" class="btn_wts_mid">Add to watchlist</div><div class="msprite btn_wts_right"></div>&nbsp;<input type="button" class="btn_addtoportfolio" onclick="showDivPopupNew('15130025','portfolio');" value="Add to portfolio"></div>
+		</div>
+		<div id="15130025" class="moneypopup1" style="display:none; width:250px;"></div>
+		<div class="clear"></div>
+	</div>
+</div>
+	<span class="clear"></span>
+	<div style="margin-top: 5px;">
+		<a href='/companies/NTPC-Ltd/15130025'>Back to Company Page</a>
+	</div>
+
+	<div>
+		<table cellpadding="5" cellspacing="0" width="100%">
+			<tr>
+				<td width="20%" class="f14 bold">
+					Results
+				</td>
+				<td width="80%">
+											<div class="tabs">
+							<a href='/companies/NTPC-Ltd/15130025/results-quarter'>Quarterly</a>
+						</div>
+																<div class="tabs">
+							<a href='/companies/NTPC-Ltd/15130025/results-half'>Half yearly</a>
+						</div>
+																<div class="tabs">
+							<a href='/companies/NTPC-Ltd/15130025/results-annual'>Annual</a>
+						</div>
+									</td>
+			</tr>
+			<tr>
+				<td class="f14 bold">
+					Statement
+				</td>
+				<td>
+											<div class="tabs" style="width: 85px;">
+							<a href='/companies/NTPC-Ltd/15130025/balance-sheet'>Balance sheet</a>
+						</div>
+																<div class="tabs"><a href='/companies/NTPC-Ltd/15130025/profit-and-loss'>P&L</a>
+						</div>
+																<div class="tabs"><a href='/companies/NTPC-Ltd/15130025/cash-flow'>Cash flow</a></div>
+									</td>
+			</tr>
+			<tr>
+				<td class="f14 bold">
+					More
+				</td>
+				<td>
+											<div class="tabs">
+						<a href="/companies/NTPC-Ltd/15130025/dividend">Dividend</a>
+						</div>
+																					<div class="tabs" style="width: 85px;">
+							<a href="/companies/NTPC-Ltd/15130025/share-holding">Share holding</a>
+						</div>
+																<div class="tabs" style="width: 110px;">
+							<a href="/companies/NTPC-Ltd/15130025/capital-structures">Capital structures</a>
+						</div>
+																<div class="tabs curLink">Ratio</div>
+									</td>
+			</tr>
+		</table>
+	</div>
+<span class="ht10"></span>
+<div>
+	<div class="floatL f16 bold"style="margin: 5px 0;">
+					Ratios
+			</div>
+	<div class="floatR" style="margin: 5px 0;">(Rs crore)</div>
+</div>
+			<table class="dataTable">
+			<thead>
+				<tr>
+					<th></th>
+										<th align='right'>Mar ' 15</th>
+										<th align='right'>Mar ' 14</th>
+										<th align='right'>Mar ' 13</th>
+										<th align='right'>Mar ' 12</th>
+										<th align='right'>Mar ' 11</th>
+									</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan='6'>Per share ratios</td>
+				</tr>
+				<tr>
+					<td>Adjusted EPS (Rs)</td>
+										<td align='right'>12.08</td>
+										<td align='right'>13.33</td>
+										<td align='right'>13.23</td>
+										<td align='right'>10.81</td>
+										<td align='right'>9.05</td>
+									</tr>
+				<tr>
+					<td>Adjusted cash EPS (Rs)</td>
+										<td align='right'>18.03</td>
+										<td align='right'>18.35</td>
+										<td align='right'>17.35</td>
+										<td align='right'>14.19</td>
+										<td align='right'>12.07</td>
+									</tr>
+				<tr>
+					<td>Reported EPS (Rs)</td>
+										<td align='right'>12.48</td>
+										<td align='right'>13.31</td>
+										<td align='right'>15.30</td>
+										<td align='right'>11.19</td>
+										<td align='right'>11.04</td>
+									</tr>
+				<tr>
+					<td>Reported cash EPS (Rs)</td>
+										<td align='right'>18.44</td>
+										<td align='right'>18.33</td>
+										<td align='right'>19.42</td>
+										<td align='right'>14.57</td>
+										<td align='right'>14.05</td>
+									</tr>
+				<tr>
+					<td>Dividend per share</td>
+										<td align='right'>2.50</td>
+										<td align='right'>5.75</td>
+										<td align='right'>5.75</td>
+										<td align='right'>4.00</td>
+										<td align='right'>3.80</td>
+									</tr>
+				<tr>
+					<td>Operating profit per share (Rs)</td>
+										<td align='right'>19.10</td>
+										<td align='right'>21.56</td>
+										<td align='right'>20.72</td>
+										<td align='right'>16.66</td>
+										<td align='right'>14.52</td>
+									</tr>
+				<tr>
+					<td>Book value (excl rev res) per share EPS (Rs)</td>
+										<td align='right'>99.03</td>
+										<td align='right'>104.08</td>
+										<td align='right'>97.49</td>
+										<td align='right'>88.89</td>
+										<td align='right'>82.34</td>
+									</tr>
+				<tr>
+					<td>Book value (incl rev res) per share EPS (Rs)</td>
+										<td align='right'>99.03</td>
+										<td align='right'>104.08</td>
+										<td align='right'>97.49</td>
+										<td align='right'>88.89</td>
+										<td align='right'>82.34</td>
+									</tr>
+				<tr>
+					<td>Net operating income per share EPS (Rs)</td>
+										<td align='right'>88.83</td>
+										<td align='right'>87.34</td>
+										<td align='right'>79.65</td>
+										<td align='right'>75.26</td>
+										<td align='right'>66.78</td>
+									</tr>
+				<tr>
+					<td>Free reserves per share EPS (Rs)</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+									</tr>
+				<tr>
+					<td colspan='6'>Profitability ratios</td>
+				</tr>
+				<tr>
+					<td>Operating margin (%)</td>
+										<td align='right'>21.50</td>
+										<td align='right'>24.68</td>
+										<td align='right'>26.01</td>
+										<td align='right'>22.13</td>
+										<td align='right'>21.74</td>
+									</tr>
+				<tr>
+					<td>Gross profit margin (%)</td>
+										<td align='right'>14.79</td>
+										<td align='right'>18.93</td>
+										<td align='right'>20.84</td>
+										<td align='right'>17.63</td>
+										<td align='right'>17.22</td>
+									</tr>
+				<tr>
+					<td>Net profit margin (%)</td>
+										<td align='right'>14.04</td>
+										<td align='right'>14.69</td>
+										<td align='right'>18.34</td>
+										<td align='right'>14.22</td>
+										<td align='right'>15.85</td>
+									</tr>
+				<tr>
+					<td>Adjusted cash margin (%)</td>
+										<td align='right'>19.72</th>
+										<td align='right'>20.25</th>
+										<td align='right'>20.79</th>
+										<td align='right'>18.04</th>
+										<td align='right'>17.33</th>
+									</tr>
+				<tr>
+					<td>Adjusted return on net worth (%)</td>
+										<td align='right'>12.19</td>
+										<td align='right'>12.80</td>
+										<td align='right'>13.56</td>
+										<td align='right'>12.15</td>
+										<td align='right'>10.99</td>
+									</tr>
+				<tr>
+					<td>Reported return on net worth (%)</td>
+										<td align='right'>12.60</td>
+										<td align='right'>12.78</td>
+										<td align='right'>15.69</td>
+										<td align='right'>12.58</td>
+										<td align='right'>13.40</td>
+									</tr>
+				<tr>
+					<td>Return on long term funds (%)</td>
+										<td align='right'>8.08</td>
+										<td align='right'>11.01</td>
+										<td align='right'>12.56</td>
+										<td align='right'>11.51</td>
+										<td align='right'>10.99</td>
+									</tr>
+				<tr>
+					<td colspan='6'>Leverage ratios</td>
+				</tr>
+				<tr>
+					<td>Long term debt / Equity</td>
+										<td align='right'>0.96</td>
+										<td align='right'>0.72</td>
+										<td align='right'>0.66</td>
+										<td align='right'>0.62</td>
+										<td align='right'>0.58</td>
+									</tr>
+				<tr>
+					<td>Total debt/equity</td>
+										<td align='right'>0.96</td>
+										<td align='right'>0.72</td>
+										<td align='right'>0.66</td>
+										<td align='right'>0.62</td>
+										<td align='right'>0.58</td>
+									</tr>
+				<tr>
+					<td>Owners fund as % of total source</td>
+										<td align='right'>50.97</td>
+										<td align='right'>57.89</td>
+										<td align='right'>60.15</td>
+										<td align='right'>61.48</td>
+										<td align='right'>63.08</td>
+									</tr>
+				<tr>
+					<td>Fixed assets turnover ratio</td>
+										<td align='right'>0.47</td>
+										<td align='right'>0.51</td>
+										<td align='right'>0.51</td>
+										<td align='right'>0.54</td>
+										<td align='right'>0.52</td>
+									</tr>
+				<tr>
+					<td colspan='6'>Liquidity ratios</td>
+				</tr>
+				<tr>
+					<td>Current ratio</td>
+										<td align='right'>1.43</td>
+										<td align='right'>1.69</td>
+										<td align='right'>1.83</td>
+										<td align='right'>1.97</td>
+										<td align='right'>2.13</td>
+									</tr>
+				<tr>
+					<td>Current ratio (inc. st loans)</td>
+										<td align='right'>1.43</td>
+										<td align='right'>1.69</td>
+										<td align='right'>1.83</td>
+										<td align='right'>1.97</td>
+										<td align='right'>2.13</td>
+									</tr>
+				<tr>
+					<td>Quick ratio</td>
+										<td align='right'>1.23</td>
+										<td align='right'>1.51</td>
+										<td align='right'>1.68</td>
+										<td align='right'>1.79</td>
+										<td align='right'>1.93</td>
+									</tr>
+				<tr>
+					<td>Inventory turnover ratio</td>
+										<td align='right'>9.92</td>
+										<td align='right'>13.40</td>
+										<td align='right'>16.19</td>
+										<td align='right'>16.76</td>
+										<td align='right'>15.13</td>
+									</tr>
+				<tr>
+					<td colspan='6'>Payout ratios</td>
+				</tr>
+				<tr>
+					<td>Dividend payout ratio (net profit)</td>
+										<td align='right'>20.03</td>
+										<td align='right'>43.20</td>
+										<td align='right'>43.76</td>
+										<td align='right'>35.75</td>
+										<td align='right'>34.42</td>
+									</tr>
+				<tr>
+					<td>Dividend payout ratio (cash profit)</td>
+										<td align='right'>13.55</td>
+										<td align='right'>31.36</td>
+										<td align='right'>34.48</td>
+										<td align='right'>27.44</td>
+										<td align='right'>27.03</td>
+									</tr>
+				<tr>
+					<td>Earning retention ratio</td>
+										<td align='right'>79.30</td>
+										<td align='right'>56.85</td>
+										<td align='right'>49.36</td>
+										<td align='right'>62.99</td>
+										<td align='right'>58.03</td>
+									</tr>
+				<tr>
+					<td>Cash earnings retention ratio</td>
+										<td align='right'>86.14</td>
+										<td align='right'>68.67</td>
+										<td align='right'>61.39</td>
+										<td align='right'>71.82</td>
+										<td align='right'>68.51</td>
+									</tr>
+				<tr>
+					<td>Coverage ratios</td>
+				</tr>
+				<tr>
+					<td>Adjusted cash flow time total debt</td>
+										<td align='right'>5.28</td>
+										<td align='right'>4.12</td>
+										<td align='right'>3.72</td>
+										<td align='right'>3.92</td>
+										<td align='right'>3.99</td>
+									</tr>
+				<tr>
+					<td>Financial charges coverage ratio</td>
+										<td align='right'>6.51</td>
+										<td align='right'>8.50</td>
+										<td align='right'>10.49</td>
+										<td align='right'>9.65</td>
+										<td align='right'>10.08</td>
+									</tr>
+				<tr>
+					<td>Fin. charges cov.ratio (post tax)</td>
+										<td align='right'>6.54</td>
+										<td align='right'>7.28</td>
+										<td align='right'>9.32</td>
+										<td align='right'>8.02</td>
+										<td align='right'>9.16</td>
+									</tr>
+				<tr>
+					<td colspan='6'>Component ratios</td>
+				</tr>
+				<tr>
+					<td>Material cost component (% earnings)</td>
+										<td align='right'>0.06</td>
+										<td align='right'>0.06</td>
+										<td align='right'>0.07</td>
+										<td align='right'>0.07</td>
+										<td align='right'>0.05</td>
+									</tr>
+				<tr>
+					<td>Selling cost Component</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+									</tr>
+				<tr>
+					<td>Exports as percent of total sales</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+									</tr>
+				<tr>
+					<td>Import comp. in raw mat. consumed</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+									</tr>
+				<tr>
+					<td>Long term assets / total Assets</td>
+										<td align='right'>0.73</td>
+										<td align='right'>0.70</td>
+										<td align='right'>0.68</td>
+										<td align='right'>0.69</td>
+										<td align='right'>0.69</td>
+									</tr>
+				<tr>
+					<td>Bonus component in equity capital (%)</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+										<td align='right'>-</td>
+									</tr>
+			</tbody>
+		</table>
+	</div><!-- leftcontainer ends -->
+
+<!-- rightcontainer starts -->
+<div id="rightcontainer" class="rightcontainer">
+	<div style="height: 120px;margin-top:-75px;display:none;" id="toprdiv">
+				<h2>
+			<a href="http://money.rediff.com/mutual-funds" class="f16 bold">Mutual Fund Selector</a>
+		</h2>
+		Find the fund that is right for you
+		<span class="clear ht5"></span>
+
+				<hr class="hrline">
+		<span class="clear ht5"></span>
+						<h2>
+			<a href="http://money.rediff.com/tips" class="f16 bold">Buy? Sell? Hold?</a>
+		</h2>
+		Get the Latest Stock Tips
+		<span class="clear ht5"></span>
+
+						<span class="ht25"></span>
+	</div>
+<div>
+	<div id='world_right3'></div>
+</div>
+</div><!-- rightcontainer ends -->
+
+
+<span class="clear"></span><span class="ht30"></span>
+<div id="div_ad_Bottom"></div>
+<div class="div_footerlinks">
+<p class="f14 bold">ALL MONEYWIZ PAGES </p><div class="hrline1"></div><span class="ht10"></span>
+<table id="allpage_links" width="100%" border="0" cellpadding="0" cellspacing="5">
+<tr valign="top">
+<td><h4>Stocks</h4></td><td colspan="2"><h4>Mutual Funds</h4></td><td><h4>Investment tracking</h4></td><td></td><td></td>
+</tr>
+<tr valign="top">
+<td class="foot_col1">
+	<a href="http://money.rediff.com/companies" onclick="return footer_logurl(this);">A-Z</a><br />
+	<a href="http://zarabol.rediff.com/#!money/6801134" target="_new" onclick="enc_new(this,'http://track.rediff.com/click?url=___http://zarabol.rediff.com/%23!money/6801134___&lnk=zarabol_home-footer&newservice=moneyrt');">Market Voices</a><br />
+	Gainers - <a href="http://money.rediff.com/gainers" onclick="return footer_logurl(this);">Daily</a> | <a href="http://money.rediff.com/gainers/bse/weekly" onclick="return footer_logurl(this);">Weekly</a> | <a href="http://money.rediff.com/gainers/bse/monthly" onclick="return footer_logurl(this);">Monthly</a><br />
+	Losers - <a href="http://money.rediff.com/losers" onclick="return footer_logurl(this);">Daily</a> | <a href="http://money.rediff.com/losers/bse/weekly" onclick="return footer_logurl(this);">Weekly</a> | <a href="http://money.rediff.com/losers/bse/monthly" onclick="return footer_logurl(this);">Monthly</a><br />
+	<a href="http://money.rediff.com/companies/groups" onclick="return footer_logurl(this);">Group-wise listing</a><br />
+	<a href="http://money.rediff.com/companies/ipos" onclick="return footer_logurl(this);">IPO</a> | <a href="http://money.rediff.com/companies/ipos/top" onclick="return footer_logurl(this);">Top IPOs</a><br />
+	<a href="http://money.rediff.com/companies/ipos/recent" onclick="return footer_logurl(this);">Recent IPOs</a> | <a href="http://money.rediff.com/ipos/news" onclick="return footer_logurl(this);">IPO News</a><br />
+	<a href="http://money.rediff.com/companies/price-sorted" onclick="return footer_logurl(this);">Similar Price band</a><br />
+	<a href="http://money.rediff.com/companies/most-traded" onclick="return footer_logurl(this);">Most traded - By volumes</a><br />
+	<a href="http://money.rediff.com/companies/market-capitalisation" onclick="return footer_logurl(this);">Top 100 - By market capitalisation</a><br />
+	<a href="http://money.rediff.com/companies/results" onclick="return footer_logurl(this);">Latest Company Results</a><br />
+	<a href="http://money.rediff.com/companies/management-speaks" onclick="return footer_logurl(this);">Management Speaks</a><br />
+	<a href="http://money.rediff.com/news" onclick="return footer_logurl(this);">Market News</a>
+</td>
+<td class="foot_col2">
+	<a href="http://money.rediff.com/mutual-funds/top" onclick="return footer_logurl(this);">Top 25 schemes</a><br />
+	<a href="http://money.rediff.com/mutual-funds/high-risk" onclick="return footer_logurl(this);">High-risk, High-returns</a><br />
+	<a href="http://money.rediff.com/mutual-funds/med-risk" onclick="return footer_logurl(this);">Medium-risk, Medium-returns</a><br />
+	<a href="http://money.rediff.com/mutual-funds/low-risk" onclick="return footer_logurl(this);">Low-risk, Low-returns</a><br />
+	<a href="http://money.rediff.com/mutual-funds/gilt" onclick="return footer_logurl(this);">Gilt Funds</a><br />
+	<a href="http://money.rediff.com/mutual-funds/funds-of-funds"  onclick="return footer_logurl(this);">Funds of Funds</a><br />
+	<a href="http://money.rediff.com/mutual-funds/special" onclick="return footer_logurl(this);">Special Funds</a><br />
+	<a href="http://money.rediff.com/mutual-funds/liquid" onclick="return footer_logurl(this);">Liquid Funds</a><br />
+	<a href="http://money.rediff.com/mutual-funds/dynamic-asset-allocation" onclick="return footer_logurl(this);">Dynamic Asset Allocation</a><br />
+	<a href="http://money.rediff.com/mutual-funds/nfos" onclick="return footer_logurl(this);">NFOs</a><br />
+	<a href="http://money.rediff.com/mutual-funds/top" onclick="return footer_logurl(this);">MF Selector</a>
+</td>
+<td class="foot_col3">
+	<a href="http://money.rediff.com/mutual-funds/equity/elss" onclick="return footer_logurl(this);">Equity - ELSS</a><br />
+	<a href="http://money.rediff.com/mutual-funds/equity/index" onclick="return footer_logurl(this);">Equity - Index Funds</a><br />
+	<a href="http://money.rediff.com/mutual-funds/equity/sector" onclick="return footer_logurl(this);">Equity - Sector Funds</a><br />
+	<a href="http://money.rediff.com/mutual-funds/equity/balanced" onclick="return footer_logurl(this);">Equity - Balance Fund</a><br />
+	<a href="http://money.rediff.com/mutual-funds/equity/diversified" onclick="return footer_logurl(this);">Equity - Diversified Fund</a><br />
+	<a href="http://money.rediff.com/mutual-funds/news" onclick="return footer_logurl(this);">MF News</a><br />
+	<a href="http://money.rediff.com/budget-2014-india" onclick="return footer_logurl(this);">Budget 2014</a>
+</td>
+<td class="foot_col4">
+	<a href="http://portfolio.rediff.com/money/jsp/portfolio_login_process.jsp">My Portfolio</a><br />
+	<a href="http://portfolio.rediff.com/money/jsp/stockwatch_login_process.jsp">My Watch List</a><br />
+	<a href="http://money.rediff.com/tools/what-if" onclick="return footer_logurl(this);">If You Had Invested...</a><br />
+	<a href="http://money.rediff.com/indicators" onclick="return footer_logurl(this);">Global Indicators</a><br />
+	<a href="http://money.rediff.com/tools/forex" onclick="return footer_logurl(this);">Forex Converter</a><br />
+	<a href="http://money.rediff.com/indices" onclick="return footer_logurl(this);">Market Indices</a><br />
+	<a href="http://money.rediff.com/sectors" onclick="return footer_logurl(this);">Sectoral Indices</a><br />
+	<a href="http://money.rediff.com/indices/world" onclick="return footer_logurl(this);">World Indices</a><br />
+	Chart - <a href="http://money.rediff.com/tools/sensex" onclick="return footer_logurl(this);">Sensex</a> | <a href="http://money.rediff.com/tools/nifty" onclick="return footer_logurl(this);">Nifty</a><br />
+	<a href="http://money.rediff.com/tools/astrology" onclick="return footer_logurl(this);">Market Astrology</a>
+</td>
+<td class="foot_col5">&nbsp;
+</td>
+</tr>
+</table>
+</div>
+<center>
+<div class="footer"><img src="http://imworld.rediff.com/moneyrediff/pix/blank.gif" alt="rediff on the net" class="red_on_net_img">&copy; 2015 Rediff.com India Limited. All rights reserved. <a href="http://www.rediff.com/disclaim.htm">Disclaimer</a> - <a href="http://www.rediff.com/money/terms.html">Terms of Service</a> - <a href="http://www.rediff.com/w3c/policy.html">Privacy Policy</a> - <a href="http://money.rediff.com/feedback" onclick="return footer_logurl(this);"><b>Feedback</b></a></div>
+<span class="ht10"></span>
+</center>
+
+<script type="text/javaScript">
+showSigninInfo();
+
+function  footer_logurl(obj)
+{
+	if(typeof(glb_currentpage) != "undefined" )
+	{
+		var c_href = obj.href ;
+		if(glb_currentpage == "home")
+		{
+			if(c_href.indexOf('?') == -1 )
+			{
+				document.location.href = c_href + "?src=all_pg";
+			}
+			else
+			{
+				document.location.href = c_href + "&src=all_pg";
+			}
+			return false;
+		}
+		else if(glb_currentpage == "company")
+		{
+			if(c_href.indexOf('?') == -1 )
+			{
+				document.location.href = c_href + "?src=comp_all_pg";
+			}
+			else
+			{
+				document.location.href = c_href + "&src=comp_all_pg";
+			}
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+	else
+	{
+		return true;
+	}
+}
+
+</script>
+
+<script type="text/javascript" src="http://imworld.rediff.com/moneyrediff/js_7/money_RuW.min.js"></script>
+</div><!-- wrapper ends -->
+<div id="ppage" class="MsgPopup">
+	<form name="add_pf_co" class="alignL">
+	<input name="code" value="" type="hidden" />
+	<input name="companycode" value="15130025" type="hidden" />
+	<input name="companyname" value="NTPC Ltd." type="hidden" />
+	<input name="flag" value="" type="hidden" />
+	<input name="refmoney" value="1" type="hidden" />
+	<a onclick="xcloseAddPopup('15130025','portfolio');hideDiv('datepicker');hideDiv('datepickeriframe');" href="javascript:void(0);" title="Cancel" class="iconClose">Close</a>
+	<table cellspacing="0" cellpadding="4" border="0" class="f14">
+	<tr><td colspan="3"><h6 class="f14 bold">Add NTPC Ltd. to your Portfolio</h6><span class="ht10"></span></td></tr>
+	<tr valign="top"><td><label for="stockAddDate">Date of purchase</label></td><td><input name="date" id="date" size="15" readonly="readonly" type="text" class="f14" /></td><td><a href="javascript:void(0);" onclick="displayDatePicker('date', this);" class="calender" title="Calendar"><img src="http://imworld.rediff.com/moneyrediff/pix/blank.gif" class="calender" /></a></td></tr>
+	<tr><td><label for="addstockqty">Quantity</label></td><td><input name="quantity" size="15" type="text" class="f14" /></td><td>&nbsp;</td></tr>
+	<tr><td><label for="addstockprice">Purchase price</label></td><td><input name="price" id="price" size="15" type="text" class="f14" /></td><td>&nbsp;</td></tr>
+	<tr><td></td><td><input name="bt" title="Submit" value="Add Stock" onclick="javascript:validater();" type="button" class="f14" /></td><td>&nbsp;</td></tr>
+	</table>
+	<div id="err_div" name="err_div" style="text-align:left" class="bold red"></div>
+	</form>
+	<span class="ht5"></span>
+	<div class="f11 alignL">*Portfolio will be calculated based on BSE values</div>
+</div>
+
+<div id="swpage" class="MsgPopup">
+	<form name="stockwatch_popup">
+	<input name="code" value="" type="hidden" />
+	<input name="flag" value="" type="hidden" />
+	<input name="transDetails" value="" type="hidden" />
+	<input name="company-id" value="" id="company-id" type="hidden" />
+	<input name="increase-price" id="increase-price" value="" type="hidden" />
+	<input name="decrease-price" id="decrease-price" value="" type="hidden" />
+	<input name="refmoney" value="1" type="hidden" />
+	<a onclick="xcloseAddPopup('15130025','sw');" href="javascript:void(0);" title="Cancel" class="iconClose">Close</a>
+	<table cellspacing="0" cellpadding="4" border="0" class="f14">
+	<tr valign="top"><td colspan="2"><h6 class="f14 bold">Add NTPC Ltd. to your Watchlist</h6><span class="ht10"></span><div>Alert me if price...</b></div><span class="ht10"></span></td></tr>
+	<tr valign="top"><td><label for="stockAddDate">Goes above Rs.</label></td><td><input name="maxprice" id="maxprice" size="15" type="text" /></td></tr>
+	<tr valign="top"><td><label for="stockAddDate">Goes below Rs.</label></td><td><input name="minprice" id="minprice" size="15" type="text" /></td></tr>
+	<tr valign="top"><td></td><td><input name="Submit" title="Submit" value="Add" onclick="javascript:return checkalertvalidate();" type="button" /></td></tr>
+	</table>
+	<div id="sw_err_div" name="sw_err_div" style="text-align:left" class="bold red"></div>
+	</form>
+	<span class="ht5"></span>
+	<div class="f11 alignL">*Watchlist will be based on BSE values</div>
+</div>
+<div id="swmfpage" class="MsgPopup"></div>
+<div id="pmfpage" class="MsgPopup"></div>
+
+<div id="popupSuccess" class="MsgPopup">
+	<div class="clear ht100"></div>
+	<div class="popupform"><a onclick="closePopup('popupSuccess');" href="javascript:void(0);" title="Cancel" class="iconClose">Close</a><span id="succmsg"></span></div>
+</div>
+
+<div id="addportfoliopopup" class="moneypopup1"></div>
+<div class="popupcontainer"><div id="div_signup"></div><div id="div_confirm"></div></div><div id="div_signin"></div>
+
+
+<script type="text/javascript">
+var OAS_sitepage = "inmoneyCD.rediff.com/stock-companydetails.htm";
+var OAS_listpos = "BOX03,Bottom";
+</script>
+<script language="JavaScript" src="http://im.rediff.com/uim/common/realmedia_banner_1_6.js"></script>
+<script type="text/javascript">var glb_location ="";glb_location = getCookie('RLOC');if(glb_location){if(glb_location.indexOf("ind") != -1){glb_location = "india";}}</script>
+
+<div id="world_right1_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("world_right1")){OAS_AD('BOX08');}</script></div>
+
+<div id="world_right3_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("world_right3")){OAS_AD('BOX03');}</script></div>
+
+<div id="world_top1_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("world_top1")){OAS_AD('x03');}</script></div>
+
+<div id="div_transitionAD_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("div_transitionAD")){OAS_AD('TopLeft');}</script></div>
+
+<div id="div_ad_Top_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("div_ad_Top")){OAS_AD('Top');}</script></div>
+
+<div id="div_hm_ad_x04_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("div_hm_ad_x04")){OAS_AD('x04');}</script></div>
+
+<div id="div_hm_ad_x05_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("div_hm_ad_x05")){OAS_AD('x05');}</script></div>
+
+<div id="div_ad_LB02_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("div_ad_LB02")){OAS_AD('LB02');}</script></div>
+
+<div id="div_hm_ad_x06_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("div_hm_ad_x06")){OAS_AD('x06');}</script></div>
+
+<div id="div_ad_Bottom_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("div_ad_Bottom")){OAS_AD('Bottom');}</script></div>
+
+<div id="div_ad_TopRight_hidden" class="hide"><script TYPE="text/javascript">if(document.getElementById("div_ad_TopRight")){OAS_AD('TopRight');}</script></div>
+
+<script TYPE="text/javascript">
+
+if(document.getElementById("world_right1"))
+{
+	var hdn = document.getElementById("world_right1_hidden");
+	var vsbl = document.getElementById("world_right1");
+	copyInnerHtml(hdn, vsbl);
+}
+if(document.getElementById("world_right3"))
+{
+	var hdn = document.getElementById("world_right3_hidden");
+	var vsbl = document.getElementById("world_right3");
+	copyInnerHtml(hdn, vsbl);
+}
+if(document.getElementById("world_top1"))
+{
+	var hdn = document.getElementById("world_top1_hidden");
+	var vsbl = document.getElementById("world_top1");
+	copyInnerHtml(hdn, vsbl);
+}
+if(document.getElementById("div_transitionAD"))
+{
+	var hdn = document.getElementById("div_transitionAD_hidden");
+	var vsbl = document.getElementById("div_transitionAD");
+	copyInnerHtml(hdn, vsbl);
+}
+if(document.getElementById("div_ad_Top"))
+{
+	var hdn = document.getElementById("div_ad_Top_hidden");
+	var vsbl = document.getElementById("div_ad_Top");
+	copyInnerHtml(hdn, vsbl);
+}
+if(document.getElementById("div_hm_ad_x04"))
+{
+	var hdn = document.getElementById("div_hm_ad_x04_hidden");
+	var vsbl = document.getElementById("div_hm_ad_x04");
+	copyInnerHtml(hdn, vsbl);
+}
+if(document.getElementById("div_hm_ad_x05"))
+{
+	var hdn = document.getElementById("div_hm_ad_x05_hidden");
+	var vsbl = document.getElementById("div_hm_ad_x05");
+	copyInnerHtml(hdn, vsbl);
+}
+if(document.getElementById("div_ad_LB02"))
+{
+	var hdn = document.getElementById("div_ad_LB02_hidden");
+	var vsbl = document.getElementById("div_ad_LB02");
+	copyInnerHtml(hdn, vsbl);
+}
+if(document.getElementById("div_hm_ad_x06"))
+{
+	var hdn = document.getElementById("div_hm_ad_x06_hidden");
+	var vsbl = document.getElementById("div_hm_ad_x06");
+	copyInnerHtml(hdn, vsbl);
+}
+if(document.getElementById("div_ad_Bottom"))
+{
+	var hdn = document.getElementById("div_ad_Bottom_hidden");
+	var vsbl = document.getElementById("div_ad_Bottom");
+	copyInnerHtml(hdn, vsbl);
+}
+if(document.getElementById("div_ad_TopRight"))
+{
+	var hdn = document.getElementById("div_ad_TopRight_hidden");
+	var vsbl = document.getElementById("div_ad_TopRight");
+	copyInnerHtml(hdn, vsbl);
+}
+
+</script><script type="text/javascript">if($('#leftcontainer').height() < 610){	$('#leftcontainer').css('height','650px');}</script>
+</body>
+</html>
