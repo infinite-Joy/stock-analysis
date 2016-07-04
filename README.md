@@ -42,11 +42,11 @@ Before submitting a pull request, please make sure your forked branch is up to d
 ```
 $ git remote add upstream https://github.com/pybee/pybee.github.io.git
 ```
-make sure you have the latest changes from upstream:
+* make sure you have the latest changes from upstream:
 ```
 $ git fetch upstream
 ```
-rebase your master branch to upstream before pushing to git and submitting a pull request:
+* rebase your master branch to upstream before pushing to git and submitting a pull request:
 ```
 $ git rebase upstream/master
 ```
