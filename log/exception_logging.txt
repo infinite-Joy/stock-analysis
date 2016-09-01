@@ -1,0 +1,27 @@
+2016-09-02 00:33:43,960 INFO requests.packages.urllib3.connectionpool Starting new HTTP connection (1): money.rediff.com
+2016-09-02 00:33:44,057 DEBUG requests.packages.urllib3.connectionpool "GET /LalPathLabs HTTP/1.1" 302 20
+2016-09-02 00:33:44,188 DEBUG requests.packages.urllib3.connectionpool "GET /quotes/all/LalPathLabs HTTP/1.1" 302 20
+2016-09-02 00:33:44,224 DEBUG requests.packages.urllib3.connectionpool "GET /companies/Dr-Lal-Pathlabs-Ltd/16550403 HTTP/1.1" 200 14228
+2016-09-02 00:33:46,317 ERROR __main__ could not convert string to float: '1,114.00'
+2016-09-02 00:34:31,524 INFO requests.packages.urllib3.connectionpool Starting new HTTP connection (1): money.rediff.com
+2016-09-02 00:34:31,532 INFO requests.packages.urllib3.connectionpool Starting new HTTP connection (1): money.rediff.com
+2016-09-02 00:34:31,592 DEBUG requests.packages.urllib3.connectionpool "GET /reliance HTTP/1.1" 302 20
+2016-09-02 00:34:31,605 DEBUG requests.packages.urllib3.connectionpool "GET /communications HTTP/1.1" 302 20
+2016-09-02 00:34:31,622 DEBUG requests.packages.urllib3.connectionpool "GET /quotes/all/reliance HTTP/1.1" 302 20
+2016-09-02 00:34:31,655 DEBUG requests.packages.urllib3.connectionpool "GET /companies/Reliance-Industries-Ltd/12150008?query=reliance HTTP/1.1" 200 16006
+2016-09-02 00:34:31,740 DEBUG requests.packages.urllib3.connectionpool "GET /quotes/all/communications HTTP/1.1" 302 20
+2016-09-02 00:34:31,918 DEBUG requests.packages.urllib3.connectionpool "GET /sectors/bse/teck HTTP/1.1" 200 None
+2016-09-02 00:34:33,703 ERROR __main__ could not convert string to float: '1,089.50'
+2016-09-02 00:34:33,933 ERROR __main__ list index out of range
+2016-09-02 00:34:41,691 INFO requests.packages.urllib3.connectionpool Starting new HTTP connection (1): money.rediff.com
+2016-09-02 00:34:41,793 DEBUG requests.packages.urllib3.connectionpool "GET /reliance%20communications HTTP/1.1" 302 20
+2016-09-02 00:34:41,948 DEBUG requests.packages.urllib3.connectionpool "GET /quotes/all/reliance+communications HTTP/1.1" 302 20
+2016-09-02 00:34:41,985 DEBUG requests.packages.urllib3.connectionpool "GET /companies/Reliance-Communications-Ltd/15200050 HTTP/1.1" 200 15257
+2016-09-02 00:43:44,660 INFO requests.packages.urllib3.connectionpool Starting new HTTP connection (1): money.rediff.com
+2016-09-02 00:43:44,742 DEBUG requests.packages.urllib3.connectionpool "GET /reliance%20communications HTTP/1.1" 302 20
+2016-09-02 00:43:44,778 DEBUG requests.packages.urllib3.connectionpool "GET /quotes/all/reliance+communications HTTP/1.1" 302 20
+2016-09-02 00:43:45,255 DEBUG requests.packages.urllib3.connectionpool "GET /companies/Reliance-Communications-Ltd/15200050 HTTP/1.1" 200 None
+2016-09-02 00:44:24,847 INFO requests.packages.urllib3.connectionpool Starting new HTTP connection (1): money.rediff.com
+2016-09-02 00:44:24,915 DEBUG requests.packages.urllib3.connectionpool "GET /LalPathLabs HTTP/1.1" 302 20
+2016-09-02 00:44:24,949 DEBUG requests.packages.urllib3.connectionpool "GET /quotes/all/LalPathLabs HTTP/1.1" 302 20
+2016-09-02 00:44:24,986 DEBUG requests.packages.urllib3.connectionpool "GET /companies/Dr-Lal-Pathlabs-Ltd/16550403 HTTP/1.1" 200 14236

@@ -1,3 +1,5 @@
+from __future__ import print_function
+from sys import argv
 from lxml import html
 import requests
 import time
@@ -24,7 +26,12 @@ def _get_company_primary_stats(company, tree):
     price_of_stock = company.get_price_of_stock(tree)
     fifty_two_wk_high = company.get_fifty_two_wk_high(tree)
     fifty_two_wk_low = company.get_fifty_two_wk_low(tree)
-    return {'pe_ratio': pe_ratio, 'eps': eps, 'price_of_stock': price_of_stock, 'fifty_two_wk_high': fifty_two_wk_high, 'fifty_two_wk_low': fifty_two_wk_low}
+    return {'pe_ratio': pe_ratio,
+            'eps': eps,
+            'price_of_stock': price_of_stock,
+            'fifty_two_wk_high': fifty_two_wk_high,
+            'fifty_two_wk_low': fifty_two_wk_low}
+
 
 def company_page_analysis(stock_company):
     try:
@@ -34,13 +41,13 @@ def company_page_analysis(stock_company):
         company = CompanyPage(tree)
         primary_stats = _get_company_primary_stats(company, tree)
         if all([primary_stats.get('pe_ratio') > MIN_PE_THRESHOLD, primary_stats.get('pe_ratio') < MAX_PE_THRESHOLD, primary_stats.get('eps') > MIN_EPS_THRESHOLD, primary_stats.get('price_of_stock') < ((primary_stats.get('fifty_two_wk_high') + primary_stats.get('fifty_two_wk_low'))/2)]):
-        
-        
+
+
             #get all links
             balance_sheet_link = company.get_balance_sheet_link(tree)
             dividend_link = company.get_dividend_link(tree)
             ratio_link = company.get_ratio_link(tree)
-        
+
             # go to balance sheet page for further analysis
             balance_sheet_page = requests.get('%s' % ''.join(balance_sheet_link))
             balance_sheet_tree = html.fromstring(balance_sheet_page.content)
@@ -54,12 +61,12 @@ def company_page_analysis(stock_company):
                 ratio_tree = html.fromstring(ratio_page.content)
                 ratio = Ratio(ratio_tree)
                 if ratio.consistent_dividend_payout(ratio_tree):
-                    print stock_company
-                    
+                    print(stock_company)
+
     except Exception as err:
         logger.error(err)
-        
-                
+
+
     return
 
 def companies_to_investigate():
@@ -67,11 +74,14 @@ def companies_to_investigate():
     f = open('top_500_companies.txt', 'r')
     for company in f:
         companies.append(company)
-    
+
     return companies
-    
+
 if __name__ == '__main__':
-    stock_companies = companies_to_investigate()
+    if len(argv) > 1:
+        stock_companies = argv[1:]
+    else:
+        stock_companies = companies_to_investigate()
     jobs = []
     pool = multiprocessing.Pool(processes=10)
     for stock_company in stock_companies:
