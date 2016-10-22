@@ -1,0 +1,7 @@
+BeautifulSoup==3.2.1
+beautifulsoup4==4.4.1
+future==0.15.2
+pefile==2016.3.28
+PyInstaller==3.2
+pypiwin32==219
+requests==2.8.1
