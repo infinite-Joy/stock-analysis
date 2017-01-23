@@ -3,7 +3,7 @@ This is a simple stock analysis software for Indian stocks inspired by guideline
 
 ## to start working
 First clone the repo
-```git clone https://github.com/infinite-Joy/stock-analysis.git```
+```git clone git@github.com:infinite-Joy/stock-analysis.git```
 
 To install requirements:
 
@@ -39,16 +39,16 @@ If you find problems with this software, [log them on GitHub](https://github.com
 Before submitting a pull request, please make sure your forked branch is up to date with the original branch. To do this:
 
 * set your upstream remote:
-```
-$ git remote add upstream https://github.com/pybee/pybee.github.io.git
-```
+
+    $ git remote add upstream git@github.com:infinite-Joy/stock-analysis.git
+
 * make sure you have the latest changes from upstream:
-```
-$ git fetch upstream
-```
+
+    $ git fetch upstream
+
 * rebase your master branch to upstream before pushing to git and submitting a pull request:
-```
-$ git rebase upstream/master
-```
+
+    $ git rebase upstream/master
+
 
 If you need a windows executable mail me at joydeepubuntu[at]gmail[dot]com
