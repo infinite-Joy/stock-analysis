@@ -40,7 +40,18 @@ def company_page_analysis(stock_company):
         tree = html.fromstring(page.content)
         company = CompanyPage(tree)
         primary_stats = _get_company_primary_stats(company, tree)
-        if all([primary_stats.get('pe_ratio') > MIN_PE_THRESHOLD, primary_stats.get('pe_ratio') < MAX_PE_THRESHOLD, primary_stats.get('eps') > MIN_EPS_THRESHOLD, primary_stats.get('price_of_stock') < ((primary_stats.get('fifty_two_wk_high') + primary_stats.get('fifty_two_wk_low'))/2)]):
+        pe_ratio_min = primary_stats.get('pe_ratio') > MIN_PE_THRESHOLD
+        pe_ratio_max = primary_stats.get('pe_ratio') < MAX_PE_THRESHOLD
+        eps_cond = primary_stats.get('eps') > MIN_EPS_THRESHOLD
+        price_somewhr_in_middle = (
+            primary_stats.get('price_of_stock') < (
+                (primary_stats.get('fifty_two_wk_high') +
+                 primary_stats.get('fifty_two_wk_low'))/2
+            )
+        )
+        import pdb
+        pdb.set_trace()
+        if all([pe_ratio_min, pe_ratio_max, eps_cond, price_somewhr_in_middle]):
 
 
             #get all links
@@ -82,9 +93,14 @@ if __name__ == '__main__':
         stock_companies = argv[1:]
     else:
         stock_companies = companies_to_investigate()
-    jobs = []
-    pool = multiprocessing.Pool(processes=10)
-    for stock_company in stock_companies:
-        pool.apply_async(company_page_analysis, args=(stock_company,))
-    pool.close()
-    pool.join()
+    # jobs = []
+    # pool = multiprocessing.Pool(processes=10)
+    # for stock_company in stock_companies:
+    #     pool.apply_async(company_page_analysis, args=(stock_company,))
+    # pool.close()
+    # pool.join()
+    for company in stock_companies:
+        import time
+        time.sleep(1)
+        print(company)
+        company_page_analysis(company)
