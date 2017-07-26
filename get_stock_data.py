@@ -49,10 +49,11 @@ def company_page_analysis(stock_company):
                  primary_stats.get('fifty_two_wk_low'))/2
             )
         )
-        if all([pe_ratio_min, pe_ratio_max, eps_cond, price_somewhr_in_middle]):
-
-
-            #get all links
+        print('primary_stats: {}'.format(primary_stats))
+        conditions = [pe_ratio_min, pe_ratio_max, eps_cond, price_somewhr_in_middle]
+        print('all_conditions: {}'.format(conditions))
+        if all(conditions):
+            # get all links
             balance_sheet_link = company.get_balance_sheet_link(tree)
             dividend_link = company.get_dividend_link(tree)
             ratio_link = company.get_ratio_link(tree)
@@ -109,3 +110,4 @@ if __name__ == '__main__':
         time.sleep(1)
         print(company)
         company_page_analysis(company)
+        print('###################################')
