@@ -59,12 +59,22 @@ def company_page_analysis(stock_company):
             ratio_link = company.get_ratio_link(tree)
 
             # go to balance sheet page for further analysis
-            balance_sheet_page = requests.get('%s' % ''.join(balance_sheet_link))
+            balance_sheet_page = requests.get(
+                '%s' % ''.join(balance_sheet_link)
+            )
             balance_sheet_tree = html.fromstring(balance_sheet_page.content)
             balance_sheet = BalanceSheet(balance_sheet_tree)
-            current_assets_loans_advances = balance_sheet.get_current_assets_loans_advances(balance_sheet_tree)
-            current_liabilities_and_provisions = balance_sheet.get_current_liabilities_and_provisions(balance_sheet_tree)
-            total_net_current_assets = balance_sheet.get_total_net_current_assets(balance_sheet_tree)
+            current_assets_loans_advances = (
+                balance_sheet
+                .get_current_assets_loans_advances(balance_sheet_tree)
+            )
+            current_liabilities_and_provisions = (
+                balance_sheet
+                .get_current_liabilities_and_provisions(balance_sheet_tree)
+            )
+            total_net_current_assets = (
+                balance_sheet.get_total_net_current_assets(balance_sheet_tree)
+            )
             print('{stock_company} has '
                   'total_net_current_assets: {total_net_current_assets}'
                   'and current_liabilities_and_provisions: '

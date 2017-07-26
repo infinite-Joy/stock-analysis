@@ -7,7 +7,10 @@ class Ratio:
         self.tree = tree
 
     def get_present_year_dividend_present_year_dividend_per_share(self, tree):
-        return trying(tree, '/html/body/div[2]/div[5]/table/tbody/tr[6]/td[2]/text()')
+        p1 = trying(tree, '/html/body/div[2]/div[5]/table/tbody/tr[6]/td[2]/text()')
+        import pdb
+        pdb.set_trace()
+        return p1
 
     def get_present_year_dividend_present_year_dividend_per_share_minus1(self, tree):
         return trying(tree, '/html/body/div[2]/div[5]/table/tbody/tr[6]/td[3]/text()')
