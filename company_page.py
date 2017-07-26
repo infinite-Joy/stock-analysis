@@ -47,41 +47,26 @@ class CompanyPage:
             )
         )
 
-    def get_balance_sheet_link(self, tree):
+    def _sheet_links(self, tree, this_xpath):
+        """TODO: Docstring for _sheet_links.
+
+        :tree: TODO
+        :xpath: TODO
+        :returns: TODO
+
+        """
         try:
-            balance_sheet_links = (
-                tree
-                .xpath(
-                    '//*[@id="div_res_centre_more"]/a[4]'
-                )
-            )
-            balance_sheet_link1 = balance_sheet_links[0].attrib['href']
+            _sheet_links = (tree.xpath(this_xpath))
+            _sheet_link = _sheet_links[0].attrib['href']
         except KeyError:
-            balance_sheet_link1 = ""
-        return balance_sheet_link1
+            _sheet_link = ""
+        return _sheet_link
+
+    def get_balance_sheet_link(self, tree):
+        return self._sheet_links(tree, '//*[@id="div_res_centre_more"]/a[4]')
 
     def get_dividend_link(self, tree):
-        try:
-            balance_sheet_links = (
-                tree
-                .xpath(
-                    '//*[@id="div_res_centre_more"]/a[7]'
-                )
-            )
-            balance_sheet_link1 = balance_sheet_links[0].attrib['href']
-        except KeyError:
-            balance_sheet_link1 = ""
-        return balance_sheet_link1
+        return self._sheet_links(tree, '//*[@id="div_res_centre_more"]/a[7]')
 
     def get_ratio_link(self, tree):
-        try:
-            balance_sheet_links = (
-                tree
-                .xpath(
-                    '//*[@id="div_res_centre_more"]/a[11]'
-                )
-            )
-            balance_sheet_link1 = balance_sheet_links[0].attrib['href']
-        except KeyError:
-            balance_sheet_link1 = ""
-        return balance_sheet_link1
+        return self._sheet_links(tree, '//*[@id="div_res_centre_more"]/a[11]')
