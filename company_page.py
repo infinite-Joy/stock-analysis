@@ -26,7 +26,7 @@ class CompanyPage:
         return eps
 
     def get_price_of_stock(self, tree):
-        pos = trying(tree, '//*[@id="ltpid"]/text()')
+        pos = trying(tree, '//*[@id="ltpid"]')
         return pos
 
     def get_fifty_two_wk_high(self, tree):
@@ -49,50 +49,31 @@ class CompanyPage:
 
     def get_balance_sheet_link(self, tree):
         try:
-            balance_sheet_link1 = (
+            balance_sheet_links = (
                 tree
                 .xpath(
-                    '/html/body/div[4]/div[8]/div[8]/div[2]/div/a[4]/@href'
-                )[0]
+                    '//*[@id="div_res_centre_more"]/a[4]'
+                )
             )
+            balance_sheet_link1 = balance_sheet_links[0].attrib['href']
         except KeyError:
             balance_sheet_link1 = ""
-
-        try:
-            balance_sheet_link2 = (
-                tree.xpath(
-                    '/html/body/div[4]/div[8]/div[7]/div[2]/div/a[4]/@href'
-                )[0]
-            )
-        except KeyError:
-            balance_sheet_link2 = ""
-
-        if balance_sheet_link1 is not "":
-            return balance_sheet_link1
-        elif balance_sheet_link2 is not "":
-            return balance_sheet_link2
-        else:
-            return ""
+        return balance_sheet_link1
 
     def get_dividend_link(self, tree):
+        import pdb
+        pdb.set_trace()
         try:
-            balance_sheet_link1 = tree.xpath('/html/body/div[4]/div[8]/div[7]'
-                                             '/div[2]/div/a[7]/@href')[0]
+            balance_sheet_links = (
+                tree
+                .xpath(
+                    '//*[@id="div_res_centre_more"]/a[14]'
+                )
+            )
+            balance_sheet_link1 = balance_sheet_links[0].attrib['href']
         except KeyError:
             balance_sheet_link1 = ""
-
-        try:
-            balance_sheet_link2 = tree.xpath('/html/body/div[4]/div[8]/div[8]'
-                                             '/div[2]/div/a[7]/@href')[0]
-        except KeyError:
-            balance_sheet_link2 = ""
-
-        if balance_sheet_link1 is not "":
-            return balance_sheet_link1
-        elif balance_sheet_link2 is not "":
-            return balance_sheet_link2
-        else:
-            return ""
+        return balance_sheet_link1
 
     def get_ratio_link(self, tree):
         try:

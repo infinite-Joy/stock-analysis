@@ -40,7 +40,6 @@ def company_page_analysis(stock_company):
         tree = html.fromstring(page.content)
         company = CompanyPage(tree)
         primary_stats = _get_company_primary_stats(company, tree)
-        print(primary_stats)
         pe_ratio_min = primary_stats.get('pe_ratio') > MIN_PE_THRESHOLD
         pe_ratio_max = primary_stats.get('pe_ratio') < MAX_PE_THRESHOLD
         eps_cond = primary_stats.get('eps') > MIN_EPS_THRESHOLD
@@ -50,8 +49,6 @@ def company_page_analysis(stock_company):
                  primary_stats.get('fifty_two_wk_low'))/2
             )
         )
-        import pdb
-        pdb.set_trace()
         if all([pe_ratio_min, pe_ratio_max, eps_cond, price_somewhr_in_middle]):
 
 
@@ -74,12 +71,10 @@ def company_page_analysis(stock_company):
                 ratio = Ratio(ratio_tree)
                 if ratio.consistent_dividend_payout(ratio_tree):
                     print(stock_company)
-
     except Exception as err:
         logger.error(err)
-
-
     return
+
 
 def companies_to_investigate():
     companies = []
@@ -88,6 +83,7 @@ def companies_to_investigate():
         companies.append(company)
 
     return companies
+
 
 if __name__ == '__main__':
     if len(argv) > 1:
