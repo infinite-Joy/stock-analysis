@@ -18,13 +18,16 @@ class CompanyPage:
             i = i - 1
         return ratio
 
-
     def get_pe_ratio(self, tree):
         pe_ratio = trying(tree, '//*[@id="div_rcard_more"]/div[1]/div[2]')
         return pe_ratio
 
     def get_eps(self, tree):
-        return self._get_correct_ratio(tree, '/html/body/div[4]/div[8]/div[', ']/div[1]/div/div[2]/div[2]/text()')
+        eps= trying(tree, '//*[@id="div_rcard_more"]/div[2]/div[2]')
+        # return self._get_correct_ratio(tree, '/html/body/div[4]/div[8]/div[', ']/div[1]/div/div[2]/div[2]/text()')
+        import pdb
+        pdb.set_trace()
+        return eps
 
 
     def get_price_of_stock(self, tree):

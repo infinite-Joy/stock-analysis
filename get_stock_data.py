@@ -40,6 +40,7 @@ def company_page_analysis(stock_company):
         tree = html.fromstring(page.content)
         company = CompanyPage(tree)
         primary_stats = _get_company_primary_stats(company, tree)
+        print(primary_stats)
         pe_ratio_min = primary_stats.get('pe_ratio') > MIN_PE_THRESHOLD
         pe_ratio_max = primary_stats.get('pe_ratio') < MAX_PE_THRESHOLD
         eps_cond = primary_stats.get('eps') > MIN_EPS_THRESHOLD
