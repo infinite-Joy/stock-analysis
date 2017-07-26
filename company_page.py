@@ -61,13 +61,11 @@ class CompanyPage:
         return balance_sheet_link1
 
     def get_dividend_link(self, tree):
-        import pdb
-        pdb.set_trace()
         try:
             balance_sheet_links = (
                 tree
                 .xpath(
-                    '//*[@id="div_res_centre_more"]/a[14]'
+                    '//*[@id="div_res_centre_more"]/a[7]'
                 )
             )
             balance_sheet_link1 = balance_sheet_links[0].attrib['href']
@@ -77,20 +75,13 @@ class CompanyPage:
 
     def get_ratio_link(self, tree):
         try:
-            balance_sheet_link1 = tree.xpath('/html/body/div[4]/div[8]/div[8]'
-                                             '/div[2]/div/a[11]/@href')[0]
+            balance_sheet_links = (
+                tree
+                .xpath(
+                    '//*[@id="div_res_centre_more"]/a[11]'
+                )
+            )
+            balance_sheet_link1 = balance_sheet_links[0].attrib['href']
         except KeyError:
             balance_sheet_link1 = ""
-
-        try:
-            balance_sheet_link2 = tree.xpath('/html/body/div[4]/div[8]/div[7]'
-                                             '/div[2]/div/a[11]/@href')[0]
-        except KeyError:
-            balance_sheet_link2 = ""
-
-        if balance_sheet_link1 is not "":
-            return balance_sheet_link1
-        elif balance_sheet_link2 is not "":
-            return balance_sheet_link2
-        else:
-            return ""
+        return balance_sheet_link1
