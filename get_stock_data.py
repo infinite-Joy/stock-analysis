@@ -64,6 +64,14 @@ def company_page_analysis(stock_company):
             current_assets_loans_advances = balance_sheet.get_current_assets_loans_advances(balance_sheet_tree)
             current_liabilities_and_provisions = balance_sheet.get_current_liabilities_and_provisions(balance_sheet_tree)
             total_net_current_assets = balance_sheet.get_total_net_current_assets(balance_sheet_tree)
+            print('{stock_company} has '
+                  'total_net_current_assets: {total_net_current_assets}'
+                  'and current_liabilities_and_provisions: '
+                  '{current_liabilities_and_provisions}'.format(
+                      stock_company=stock_company,
+                      total_net_current_assets=total_net_current_assets,
+                      current_liabilities_and_provisions=current_liabilities_and_provisions
+                  ))
             if total_net_current_assets > current_liabilities_and_provisions:
                 # go to ratio page
                 ratio_page = requests.get('%s' % ''.join(ratio_link))
