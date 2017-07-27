@@ -1,6 +1,8 @@
 # stock-analysis
 This is a simple stock analysis software for Indian stocks inspired by guidelines from the guidelines of the father of security analysis and value investing, Benjamin Graham.
 
+stock-analysis now is python3 and runs on python3.5
+
 ## to start working
 First clone the repo
 ```git clone git@github.com:infinite-Joy/stock-analysis.git```
