@@ -6,17 +6,6 @@ class CompanyPage:
     def __init__(self, tree):
         self.tree = tree
 
-    def _get_correct_ratio(self, tree, x_path_first_part, x_path_sec_part):
-        ratio_not_found = True
-        i = 8
-        while ratio_not_found and i > 0:
-            x_path = x_path_first_part + str(i) + x_path_sec_part
-            ratio = trying(tree, x_path)
-            if ratio != 0.00:
-                ratio_not_found = False
-            i = i - 1
-        return ratio
-
     def get_pe_ratio(self, tree):
         pe_ratio = trying(tree, '//*[@id="div_rcard_more"]/div[1]/div[2]')
         return pe_ratio
