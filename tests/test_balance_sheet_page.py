@@ -15,12 +15,12 @@ def test_get_current_assets_loans_advances():
     current_assets_loans_advances = balance_sheet.get_current_assets_loans_advances(balance_sheet_tree)
     assert current_assets_loans_advances != 0.00
     assert isinstance(current_assets_loans_advances, float)
-    
+
 def test_get_current_liabilities_and_provisions():
     current_liabilities_and_provisions = balance_sheet.get_current_liabilities_and_provisions(balance_sheet_tree)
     assert current_liabilities_and_provisions != 0.00
     assert isinstance(current_liabilities_and_provisions, float)
-    
+
 def test_get_total_net_current_assets():
     total_net_current_assets = balance_sheet.get_total_net_current_assets(balance_sheet_tree)
     assert total_net_current_assets != 0.00
