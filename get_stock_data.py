@@ -40,21 +40,44 @@ def company_page_analysis(stock_company):
         tree = html.fromstring(page.content)
         company = CompanyPage(tree)
         primary_stats = _get_company_primary_stats(company, tree)
-        if all([primary_stats.get('pe_ratio') > MIN_PE_THRESHOLD, primary_stats.get('pe_ratio') < MAX_PE_THRESHOLD, primary_stats.get('eps') > MIN_EPS_THRESHOLD, primary_stats.get('price_of_stock') < ((primary_stats.get('fifty_two_wk_high') + primary_stats.get('fifty_two_wk_low'))/2)]):
-
-
-            #get all links
+        pe_ratio_min = primary_stats.get('pe_ratio') > MIN_PE_THRESHOLD
+        pe_ratio_max = primary_stats.get('pe_ratio') < MAX_PE_THRESHOLD
+        eps_cond = primary_stats.get('eps') > MIN_EPS_THRESHOLD
+        price_somewhr_in_middle = (
+            primary_stats.get('price_of_stock') < (
+                (primary_stats.get('fifty_two_wk_high') +
+                 primary_stats.get('fifty_two_wk_low'))/2
+            )
+        )
+        # print('primary_stats: {}'.format(primary_stats))
+        conditions = [pe_ratio_min, pe_ratio_max, eps_cond, price_somewhr_in_middle]
+        # print('all_conditions: {}'.format(conditions))
+        if all(conditions):
+            # get all links
             balance_sheet_link = company.get_balance_sheet_link(tree)
-            dividend_link = company.get_dividend_link(tree)
             ratio_link = company.get_ratio_link(tree)
 
             # go to balance sheet page for further analysis
-            balance_sheet_page = requests.get('%s' % ''.join(balance_sheet_link))
+            balance_sheet_page = requests.get(
+                '%s' % ''.join(balance_sheet_link)
+            )
             balance_sheet_tree = html.fromstring(balance_sheet_page.content)
             balance_sheet = BalanceSheet(balance_sheet_tree)
-            current_assets_loans_advances = balance_sheet.get_current_assets_loans_advances(balance_sheet_tree)
-            current_liabilities_and_provisions = balance_sheet.get_current_liabilities_and_provisions(balance_sheet_tree)
-            total_net_current_assets = balance_sheet.get_total_net_current_assets(balance_sheet_tree)
+            current_liabilities_and_provisions = (
+                balance_sheet
+                .get_current_liabilities_and_provisions(balance_sheet_tree)
+            )
+            total_net_current_assets = (
+                balance_sheet.get_total_net_current_assets(balance_sheet_tree)
+            )
+            # print('{stock_company} has '
+            #       'total_net_current_assets: {total_net_current_assets}'
+            #       'and current_liabilities_and_provisions: '
+            #       '{current_liabilities_and_provisions}'.format(
+            #           stock_company=stock_company,
+            #           total_net_current_assets=total_net_current_assets,
+            #           current_liabilities_and_provisions=current_liabilities_and_provisions
+            #       ))
             if total_net_current_assets > current_liabilities_and_provisions:
                 # go to ratio page
                 ratio_page = requests.get('%s' % ''.join(ratio_link))
@@ -62,12 +85,10 @@ def company_page_analysis(stock_company):
                 ratio = Ratio(ratio_tree)
                 if ratio.consistent_dividend_payout(ratio_tree):
                     print(stock_company)
-
     except Exception as err:
         logger.error(err)
-
-
     return
+
 
 def companies_to_investigate():
     companies = []
@@ -76,6 +97,7 @@ def companies_to_investigate():
         companies.append(company)
 
     return companies
+
 
 if __name__ == '__main__':
     if len(argv) > 1:
@@ -88,3 +110,9 @@ if __name__ == '__main__':
         pool.apply_async(company_page_analysis, args=(stock_company,))
     pool.close()
     pool.join()
+    # for company in stock_companies:
+    #     import time
+    #     time.sleep(1)
+    #     print(company)
+    #     company_page_analysis(company)
+    #     print('###################################')
