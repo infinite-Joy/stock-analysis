@@ -54,8 +54,5 @@ class CompanyPage:
     def get_balance_sheet_link(self, tree):
         return self._sheet_links(tree, '//*[@id="div_res_centre_more"]/a[4]')
 
-    def get_dividend_link(self, tree):
-        return self._sheet_links(tree, '//*[@id="div_res_centre_more"]/a[7]')
-
     def get_ratio_link(self, tree):
         return self._sheet_links(tree, '//*[@id="div_res_centre_more"]/a[11]')
