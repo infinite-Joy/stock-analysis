@@ -51,6 +51,8 @@ Before submitting a pull request, please make sure your forked branch is up to d
 * rebase your master branch to upstream before pushing to git and submitting a pull request:
 
     $ git rebase upstream/master
+    
+**I would really appreciate any contributions to making this more user friendly.**
 
 
 If you need a windows executable mail me at joydeepubuntu[at]gmail[dot]com
