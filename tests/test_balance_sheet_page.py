@@ -1,9 +1,8 @@
 from lxml import html
-import os
 
 from balance_sheet import BalanceSheet
 
-f = open(r"G:\Python\projects\stock_analysis\stock_analysis\tests\balance_sheet_page_content")
+f = open(r"tests/balance_sheet_page_content")
 balance_sheet_page_content = f.read()
 f.close()
 
