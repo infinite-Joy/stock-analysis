@@ -1,5 +1,4 @@
 from lxml import html
-import os
 
 from balance_sheet import BalanceSheet
 
