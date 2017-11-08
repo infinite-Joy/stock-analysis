@@ -45,8 +45,9 @@ class CompanyPage:
 
         """
         try:
-            _sheet_links = (tree.xpath(this_xpath))
+            _sheet_links = tree.xpath(this_xpath)
             _sheet_link = _sheet_links[0].attrib['href']
+            _sheet_link = _sheet_link.replace('//money', 'http://money')
         except KeyError:
             _sheet_link = ""
         return _sheet_link
