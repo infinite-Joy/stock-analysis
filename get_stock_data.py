@@ -23,6 +23,9 @@ MIN_PE_THRESHOLD = 0
 MAX_PE_THRESHOLD = 15
 MIN_EPS_THRESHOLD = 0
 TESTING = None
+
+# investment per company.
+# make this 0 in case you want to disable this flag
 MY_RISK_TOLERANCE = 50000  # investment per company
 
 
