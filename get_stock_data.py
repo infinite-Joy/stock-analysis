@@ -31,7 +31,10 @@ def _get_company_primary_stats(company, tree):
     price_of_stock = company.get_price_of_stock(tree)
     fifty_two_wk_high = company.get_fifty_two_wk_high(tree)
     fifty_two_wk_low = company.get_fifty_two_wk_low(tree)
-    return {'pe_ratio': pe_ratio,
+    volume = company.get_volume(tree)
+    return {'company': company,
+            'volume': volume,
+            'pe_ratio': pe_ratio,
             'eps': eps,
             'price_of_stock': price_of_stock,
             'fifty_two_wk_high': fifty_two_wk_high,

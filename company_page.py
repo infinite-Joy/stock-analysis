@@ -65,4 +65,5 @@ class CompanyPage:
         :returns: TODO
 
         """
-        return self._sheet_links(tree, '//*[@id="Volume"]')
+        volm = tree.xpath('//*[@id="Volume"]/text()')
+        return int(volm[0].replace(",", ""))
