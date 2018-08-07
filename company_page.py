@@ -57,3 +57,12 @@ class CompanyPage:
 
     def get_ratio_link(self, tree):
         return self._sheet_links(tree, '//*[@id="div_res_centre_more"]/a[11]')
+
+    def get_volume(self, tree):
+        """TODO: Docstring for get_volume.
+
+        :tree: TODO
+        :returns: TODO
+
+        """
+        return self._sheet_links(tree, '//*[@id="Volume"]')
