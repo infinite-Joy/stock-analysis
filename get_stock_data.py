@@ -23,6 +23,7 @@ MIN_PE_THRESHOLD = 0
 MAX_PE_THRESHOLD = 15
 MIN_EPS_THRESHOLD = 0
 TESTING = None
+MY_RISK_TOLERANCE = 50000  # investment per company
 
 
 def _get_company_primary_stats(company, tree):
@@ -48,15 +49,35 @@ def company_page_analysis(stock_company):
         tree = html.fromstring(page.content)
         company = CompanyPage(tree)
         primary_stats = _get_company_primary_stats(company, tree)
+
+        # PE has to be greater than 0, Negative PE means that the company is
+        # not making profit.
         pe_ratio_min = primary_stats.get('pe_ratio') > MIN_PE_THRESHOLD
+
+        # PE has to be less than 15. If greater it means that the company is
+        # overpriced.
         pe_ratio_max = primary_stats.get('pe_ratio') < MAX_PE_THRESHOLD
+
+        # Company should be making some profit.
         eps_cond = primary_stats.get('eps') > MIN_EPS_THRESHOLD
+
+        # prices towards the lower range.
         price_somewhr_in_middle = (
             primary_stats.get('price_of_stock') < (
                 (primary_stats.get('fifty_two_wk_high') +
                  primary_stats.get('fifty_two_wk_low'))/2
             )
         )
+
+        # total money interchanged greater than 10 times what I will be
+        # investing. Else I may not find people that will be willing to buy or
+        # sell at the expected rate and there may be too much fluctuation.
+        total_money_floating = (
+            primary_stats.get('volume') * primary_stats.get('price_of_stock')
+        )
+        if total_money_floating < 10 * MY_RISK_TOLERANCE:
+            return
+
         if TESTING:
             print('primary_stats: {}'.format(primary_stats))
         conditions = [
