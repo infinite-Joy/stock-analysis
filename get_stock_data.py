@@ -129,7 +129,11 @@ def company_page_analysis(stock_company):
                         'ratio consistent_dividend_payout: {}'.format(
                             ratio.consistent_dividend_payout(ratio_tree)))
                 if ratio.consistent_dividend_payout(ratio_tree):
-                    print(stock_company)
+                    print('{stock_company} ! total_net_current_assets: {total_net_current_assets} ! current_liabilities_and_provisions: {current_liabilities_and_provisions}'.format(
+                          stock_company=stock_company.strip(),
+                          total_net_current_assets=total_net_current_assets,
+                          current_liabilities_and_provisions=current_liabilities_and_provisions
+                      ))
     except Exception as err:
         logger.error(err)
     return
