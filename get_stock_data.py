@@ -78,8 +78,8 @@ def company_page_analysis(stock_company):
         total_money_floating = (
             primary_stats.get('volume') * primary_stats.get('price_of_stock')
         )
-        if total_money_floating < 10 * MY_RISK_TOLERANCE:
-            return
+        #if total_money_floating < 10 * MY_RISK_TOLERANCE:
+        #    return
 
         if TESTING:
             print('primary_stats: {}'.format(primary_stats))
@@ -88,7 +88,7 @@ def company_page_analysis(stock_company):
         ]
         if TESTING:
             print('all_conditions: {}'.format(conditions))
-        if all(conditions):
+        if all(conditions) is True:
             # get all links
             balance_sheet_link = company.get_balance_sheet_link(tree)
             ratio_link = company.get_ratio_link(tree)
@@ -99,14 +99,11 @@ def company_page_analysis(stock_company):
             )
             balance_sheet_tree = html.fromstring(balance_sheet_page.content)
             balance_sheet = BalanceSheet(balance_sheet_tree)
-            current_liabilities_and_provisions = (
-                balance_sheet
-                .get_current_liabilities_and_provisions(balance_sheet_tree)
-            )
+            current_liabilities_and_provisions = balance_sheet.get_current_liabilities_and_provisions(balance_sheet_tree)
             total_net_current_assets = (
                 balance_sheet.get_total_net_current_assets(balance_sheet_tree)
             )
-            if TESTING:
+            if TESTING is True:
                 print('{stock_company} has '
                       'total_net_current_assets: {total_net_current_assets}'
                       'and current_liabilities_and_provisions: '

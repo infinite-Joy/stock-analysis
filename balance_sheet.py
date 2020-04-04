@@ -19,9 +19,13 @@ class BalanceSheet:
 
     def get_current_liabilities_and_provisions(self, tree):
         current_liabilities_and_provisions = trying(
-            tree, '/html/body/div[2]/div[5]/table/tbody/tr[21]/td[2]'
+            tree, '//*[@id="leftcontainer"]/table/tbody/tr[21]/td[2]'
         )
         return current_liabilities_and_provisions
 
     def get_total_net_current_assets(self, tree):
-        return trying(tree, '/html/body/div[2]/div[5]/table/tbody/tr[22]/td[2]')
+        return trying(
+            tree,
+            '//*[@id="leftcontainer"]/table/tbody/tr[22]/td[2]'
+            #'/html/body/div[2]/div[5]/table/tbody/tr[22]/td[2]'
+        )
