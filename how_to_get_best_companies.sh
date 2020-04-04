@@ -32,3 +32,22 @@ saionee@saioneePC:~/opensource/stock-analysis$ grep -Eo '[0-9]+' companiesthismo
 28015
 27878
 ```
+
+### another way
+
+saionee@saioneePC:~/opensource/stock-analysis$ grep -Eo '[0-9]+' companiesthismonth.txt | sort -rn | head -n 30 | xargs -I{} grep {} companiesthismonth.txt | grep -v Fina
+Magma Fincorp Ltd. ! total_net_current_assets: 13815.99 ! current_liabilities_and_provisions: 685.54
+HCL Technologies Ltd. ! total_net_current_assets: 13214.0 ! current_liabilities_and_provisions: 6985.0
+Glenmark Pharmaceuticals Ltd. ! total_net_current_assets: 10108.14 ! current_liabilities_and_provisions: 2066.13
+NMDC Ltd. ! total_net_current_assets: 8863.22 ! current_liabilities_and_provisions: 3466.3
+HCL Technologies Ltd. ! total_net_current_assets: 13214.0 ! current_liabilities_and_provisions: 6985.0
+Zee Entertainment Enterprises Ltd. ! total_net_current_assets: 5405.5 ! current_liabilities_and_provisions: 2995.1
+Container Corporation Of India Ltd. ! total_net_current_assets: 4846.26 ! current_liabilities_and_provisions: 1538.28
+Cox & Kings Ltd. ! total_net_current_assets: 4389.48 ! current_liabilities_and_provisions: 509.51
+Simplex Infrastructures Ltd. ! total_net_current_assets: 4250.78 ! current_liabilities_and_provisions: 4119.05
+Chambal Fertilisers and Chemicals Ltd. ! total_net_current_assets: 4152.57 ! current_liabilities_and_provisions: 2411.0
+Simplex Infrastructures Ltd. ! total_net_current_assets: 4250.78 ! current_liabilities_and_provisions: 4119.05
+Rashtriya Chemicals & Fertilizers Ltd. ! total_net_current_assets: 4033.26 ! current_liabilities_and_provisions: 2575.21
+Jindal Saw Ltd. ! total_net_current_assets: 3714.75 ! current_liabilities_and_provisions: 2999.71
+NMDC Ltd. ! total_net_current_assets: 8863.22 ! current_liabilities_and_provisions: 3466.3
+
