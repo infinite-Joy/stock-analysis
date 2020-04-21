@@ -38,3 +38,13 @@ for filename in onlyfiles:
 df = df.set_index('timestamp')
 df = df.sort_index()
 print(df)
+
+# now that we have all the df in place we will need to normalise them
+# so that the analysis can be done on an equal level field.
+# we will do percentage change from previous
+for col in df.columns:
+    pc_col = col + '_pc'
+    df[pc_col] = df[col].pct_change()
+
+print(df)
+
